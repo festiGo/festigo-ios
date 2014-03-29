@@ -105,6 +105,7 @@
 		AC42EC2D18E70708005BD53B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC42EC2C18E70708005BD53B /* Images.xcassets */; };
 		AC42EC3118E7312B005BD53B /* AdelleBasic_Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC42EC2F18E7312B005BD53B /* AdelleBasic_Bold.otf */; };
 		AC42EC3218E7312B005BD53B /* AdelleBasic_BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC42EC3018E7312B005BD53B /* AdelleBasic_BoldItalic.otf */; };
+		AC42EC3418E73ADB005BD53B /* amsterdamcentrum.gpx in Resources */ = {isa = PBXBuildFile; fileRef = AC42EC3318E73ADB005BD53B /* amsterdamcentrum.gpx */; };
 		AC5BEDA9174CC82D0067F08F /* default-profile.png in Resources */ = {isa = PBXBuildFile; fileRef = AC5BEDA8174CC82D0067F08F /* default-profile.png */; };
 		AC844BFA17629EE30092D79C /* SSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = AC844BF917629EE30092D79C /* SSKeychain.m */; };
 		ACC893B6175F7A3C002AC636 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ACC893B5175F7A3C002AC636 /* libz.dylib */; };
@@ -282,6 +283,7 @@
 		AC42EC2C18E70708005BD53B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AC42EC2F18E7312B005BD53B /* AdelleBasic_Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AdelleBasic_Bold.otf; sourceTree = "<group>"; };
 		AC42EC3018E7312B005BD53B /* AdelleBasic_BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AdelleBasic_BoldItalic.otf; sourceTree = "<group>"; };
+		AC42EC3318E73ADB005BD53B /* amsterdamcentrum.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = amsterdamcentrum.gpx; sourceTree = "<group>"; };
 		AC5BEDA8174CC82D0067F08F /* default-profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default-profile.png"; sourceTree = "<group>"; };
 		AC844BF817629EE30092D79C /* SSKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSKeychain.h; sourceTree = "<group>"; };
 		AC844BF917629EE30092D79C /* SSKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSKeychain.m; sourceTree = "<group>"; };
@@ -615,6 +617,7 @@
 		ACDD9B5F1743B20200D64682 = {
 			isa = PBXGroup;
 			children = (
+				AC42EC3318E73ADB005BD53B /* amsterdamcentrum.gpx */,
 				AC303F8017C4F53100875910 /* ThirdParties */,
 				AC42EB6B18E70560005BD53B /* festiGo */,
 				ACDD9BDF1743E8D700D64682 /* Assets */,
@@ -742,6 +745,7 @@
 				AC42EC2118E70560005BD53B /* OverlayView.xib in Resources */,
 				AC42EBED18E70560005BD53B /* CatalogViewController.xib in Resources */,
 				AC42EBF918E70560005BD53B /* CheckinView.xib in Resources */,
+				AC42EC3418E73ADB005BD53B /* amsterdamcentrum.gpx in Resources */,
 				AC42EBFD18E70560005BD53B /* CompassTopView.xib in Resources */,
 				AC42EC3218E7312B005BD53B /* AdelleBasic_BoldItalic.otf in Resources */,
 				AC42EC1F18E70560005BD53B /* NavigationStatusView.xib in Resources */,

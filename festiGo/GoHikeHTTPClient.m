@@ -11,7 +11,7 @@
 #import "AFImageRequestOperation.h"
 #import "SSKeychain.h"
 
-NSString* const kGOHIKE_BASEURL = @"http://www.gotakeahike.nl";
+NSString* const kGOHIKE_BASEURL = @"http://api.festigo.es";
 
 NSString* const kFinishedLoadingCatalog = @"kFinishedLoadingCatalog";
 NSString* const kFinishedLoadingRoute = @"kFinishedLoadingRoute";
