@@ -69,7 +69,6 @@
 		AC42EC0518E70560005BD53B /* NSDataAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = AC42EB9F18E70560005BD53B /* NSDataAdditions.m */; };
 		AC42EC0618E70560005BD53B /* NSLayoutConstraint+EvenDistribution.m in Sources */ = {isa = PBXBuildFile; fileRef = AC42EBA118E70560005BD53B /* NSLayoutConstraint+EvenDistribution.m */; };
 		AC42EC0718E70560005BD53B /* FileUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = AC42EBA318E70560005BD53B /* FileUtilities.m */; };
-		AC42EC0818E70560005BD53B /* festiGo-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC42EBA418E70560005BD53B /* festiGo-Info.plist */; };
 		AC42EC0918E70560005BD53B /* GoHikeHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = AC42EBA718E70560005BD53B /* GoHikeHTTPClient.m */; };
 		AC42EC0A18E70560005BD53B /* CitiesOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = AC42EBAA18E70560005BD53B /* CitiesOverlayView.m */; };
 		AC42EC0B18E70560005BD53B /* CitiesOverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC42EBAB18E70560005BD53B /* CitiesOverlayView.xib */; };
@@ -104,6 +103,8 @@
 		AC42EC2918E70560005BD53B /* TableBackground.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC42EBE518E70560005BD53B /* TableBackground.xib */; };
 		AC42EC2A18E70560005BD53B /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = AC42EBE718E70560005BD53B /* Utilities.m */; };
 		AC42EC2D18E70708005BD53B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC42EC2C18E70708005BD53B /* Images.xcassets */; };
+		AC42EC3118E7312B005BD53B /* AdelleBasic_Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC42EC2F18E7312B005BD53B /* AdelleBasic_Bold.otf */; };
+		AC42EC3218E7312B005BD53B /* AdelleBasic_BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC42EC3018E7312B005BD53B /* AdelleBasic_BoldItalic.otf */; };
 		AC5BEDA9174CC82D0067F08F /* default-profile.png in Resources */ = {isa = PBXBuildFile; fileRef = AC5BEDA8174CC82D0067F08F /* default-profile.png */; };
 		AC844BFA17629EE30092D79C /* SSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = AC844BF917629EE30092D79C /* SSKeychain.m */; };
 		ACC893B6175F7A3C002AC636 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ACC893B5175F7A3C002AC636 /* libz.dylib */; };
@@ -279,6 +280,8 @@
 		AC42EBE618E70560005BD53B /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
 		AC42EBE718E70560005BD53B /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
 		AC42EC2C18E70708005BD53B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AC42EC2F18E7312B005BD53B /* AdelleBasic_Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AdelleBasic_Bold.otf; sourceTree = "<group>"; };
+		AC42EC3018E7312B005BD53B /* AdelleBasic_BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AdelleBasic_BoldItalic.otf; sourceTree = "<group>"; };
 		AC5BEDA8174CC82D0067F08F /* default-profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default-profile.png"; sourceTree = "<group>"; };
 		AC844BF817629EE30092D79C /* SSKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSKeychain.h; sourceTree = "<group>"; };
 		AC844BF917629EE30092D79C /* SSKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSKeychain.m; sourceTree = "<group>"; };
@@ -591,6 +594,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		AC42EC2E18E7312B005BD53B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				AC42EC2F18E7312B005BD53B /* AdelleBasic_Bold.otf */,
+				AC42EC3018E7312B005BD53B /* AdelleBasic_BoldItalic.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		AC844BF717629EE30092D79C /* SSKeychain */ = {
 			isa = PBXGroup;
 			children = (
@@ -643,6 +655,7 @@
 		ACDD9BDF1743E8D700D64682 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				AC42EC2E18E7312B005BD53B /* Fonts */,
 				AC41F7FE1761FE8400ED3F14 /* Sounds */,
 				AC5BEDA8174CC82D0067F08F /* default-profile.png */,
 			);
@@ -709,11 +722,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC42EC3118E7312B005BD53B /* AdelleBasic_Bold.otf in Resources */,
 				AC5BEDA9174CC82D0067F08F /* default-profile.png in Resources */,
 				AC42EC2318E70560005BD53B /* RewardViewController.xib in Resources */,
 				AC42EBFF18E70560005BD53B /* CompassViewController.xib in Resources */,
 				AC42EBF318E70560005BD53B /* LocationDetailPictureCell.xib in Resources */,
-				AC42EC0818E70560005BD53B /* festiGo-Info.plist in Resources */,
 				AC42EBF518E70560005BD53B /* LocationDetailTitleCell.xib in Resources */,
 				AC42EC0D18E70560005BD53B /* HelpView.xib in Resources */,
 				AC42EBEB18E70560005BD53B /* CannotPlayViewController.xib in Resources */,
@@ -730,6 +743,7 @@
 				AC42EBED18E70560005BD53B /* CatalogViewController.xib in Resources */,
 				AC42EBF918E70560005BD53B /* CheckinView.xib in Resources */,
 				AC42EBFD18E70560005BD53B /* CompassTopView.xib in Resources */,
+				AC42EC3218E7312B005BD53B /* AdelleBasic_BoldItalic.otf in Resources */,
 				AC42EC1F18E70560005BD53B /* NavigationStatusView.xib in Resources */,
 				AC41F8011761FE8400ED3F14 /* fanfare.mp3 in Resources */,
 				AC41F8021761FE8400ED3F14 /* success.mp3 in Resources */,
@@ -902,17 +916,14 @@
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)\"",
+					"$(SRCROOT)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "festiGo/festiGo-Prefix.pch";
-				HEADER_SEARCH_PATHS = "$PROJECT_DIR/Mantle/**";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "festiGo/festiGo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/TestFlightSDK2.0.0\"",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = (
 					"-objC",
 					"-all_load",
@@ -992,17 +1003,14 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)\"",
+					"$(SRCROOT)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "festiGo/festiGo-Prefix.pch";
-				HEADER_SEARCH_PATHS = "$PROJECT_DIR/Mantle/**";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "festiGo/festiGo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/TestFlightSDK2.0.0\"",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = (
 					"-objC",
 					"-all_load",
@@ -1025,17 +1033,14 @@
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)\"",
+					"$(SRCROOT)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "festiGo/festiGo-Prefix.pch";
-				HEADER_SEARCH_PATHS = "$PROJECT_DIR/Mantle/**";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "festiGo/festiGo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/TestFlightSDK2.0.0\"",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = (
 					"-objC",
 					"-all_load",

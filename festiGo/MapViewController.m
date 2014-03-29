@@ -136,11 +136,11 @@
         
         if ([annotation current] == YES)
         {
-            annotationView.image = [UIImage imageNamed:@"target"];
+            annotationView.image = [UIImage imageNamed:@"waypoint"];
         }
         else if ([annotation visited] == YES)
         {
-            annotationView.image = [UIImage imageNamed:@"target-checked"];
+            annotationView.image = [UIImage imageNamed:@"waypoint-current"];
         }
         return annotationView;
     }

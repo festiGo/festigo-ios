@@ -3,12 +3,12 @@
     {
       "idiom" : "universal",
       "scale" : "1x",
-      "filename" : "disclosureindicator.png"
+      "filename" : "waypoint.png"
     },
     {
       "idiom" : "universal",
       "scale" : "2x",
-      "filename" : "disclosureindicator@2x.png"
+      "filename" : "waypoint@2x.png"
     }
   ],
   "info" : {
