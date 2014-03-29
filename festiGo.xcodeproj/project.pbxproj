@@ -80,7 +80,7 @@
 		AC42EC0518E70560005BD53B /* NSDataAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = AC42EB9F18E70560005BD53B /* NSDataAdditions.m */; };
 		AC42EC0618E70560005BD53B /* NSLayoutConstraint+EvenDistribution.m in Sources */ = {isa = PBXBuildFile; fileRef = AC42EBA118E70560005BD53B /* NSLayoutConstraint+EvenDistribution.m */; };
 		AC42EC0718E70560005BD53B /* FileUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = AC42EBA318E70560005BD53B /* FileUtilities.m */; };
-		AC42EC0818E70560005BD53B /* GoHikeAmsterdam-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC42EBA418E70560005BD53B /* GoHikeAmsterdam-Info.plist */; };
+		AC42EC0818E70560005BD53B /* festiGo-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC42EBA418E70560005BD53B /* festiGo-Info.plist */; };
 		AC42EC0918E70560005BD53B /* GoHikeHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = AC42EBA718E70560005BD53B /* GoHikeHTTPClient.m */; };
 		AC42EC0A18E70560005BD53B /* CitiesOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = AC42EBAA18E70560005BD53B /* CitiesOverlayView.m */; };
 		AC42EC0B18E70560005BD53B /* CitiesOverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC42EBAB18E70560005BD53B /* CitiesOverlayView.xib */; };
@@ -293,8 +293,8 @@
 		AC42EBA118E70560005BD53B /* NSLayoutConstraint+EvenDistribution.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+EvenDistribution.m"; sourceTree = "<group>"; };
 		AC42EBA218E70560005BD53B /* FileUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileUtilities.h; sourceTree = "<group>"; };
 		AC42EBA318E70560005BD53B /* FileUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileUtilities.m; sourceTree = "<group>"; };
-		AC42EBA418E70560005BD53B /* GoHikeAmsterdam-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoHikeAmsterdam-Info.plist"; sourceTree = "<group>"; };
-		AC42EBA518E70560005BD53B /* GoHikeAmsterdam-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GoHikeAmsterdam-Prefix.pch"; sourceTree = "<group>"; };
+		AC42EBA418E70560005BD53B /* festiGo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "festiGo-Info.plist"; sourceTree = "<group>"; };
+		AC42EBA518E70560005BD53B /* festiGo-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "festiGo-Prefix.pch"; sourceTree = "<group>"; };
 		AC42EBA618E70560005BD53B /* GoHikeHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoHikeHTTPClient.h; sourceTree = "<group>"; };
 		AC42EBA718E70560005BD53B /* GoHikeHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoHikeHTTPClient.m; sourceTree = "<group>"; };
 		AC42EBA918E70560005BD53B /* CitiesOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CitiesOverlayView.h; sourceTree = "<group>"; };
@@ -418,7 +418,7 @@
 		ACC893CA17609E0F002AC636 /* help2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help2.png; sourceTree = "<group>"; };
 		ACC893CB17609E0F002AC636 /* help3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help3.png; sourceTree = "<group>"; };
 		ACC893CC17609E0F002AC636 /* help4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help4.png; sourceTree = "<group>"; };
-		ACDD9B681743B20200D64682 /* GoHikeAmsterdam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoHikeAmsterdam.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACDD9B681743B20200D64682 /* festiGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = festiGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACDD9B6B1743B20200D64682 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		ACDD9B6D1743B20200D64682 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		ACDD9B6F1743B20200D64682 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -564,7 +564,7 @@
 			path = Sounds;
 			sourceTree = "<group>";
 		};
-		AC42EB6B18E70560005BD53B /* GoHikeAmsterdam */ = {
+		AC42EB6B18E70560005BD53B /* festiGo */ = {
 			isa = PBXGroup;
 			children = (
 				AC42EBBC18E70560005BD53B /* Model */,
@@ -635,7 +635,7 @@
 				AC42EBE718E70560005BD53B /* Utilities.m */,
 				AC42EC2C18E70708005BD53B /* Images.xcassets */,
 			);
-			path = GoHikeAmsterdam;
+			path = festiGo;
 			sourceTree = "<group>";
 		};
 		AC42EB7618E70560005BD53B /* Cells */ = {
@@ -723,8 +723,8 @@
 			isa = PBXGroup;
 			children = (
 				AC42EBB718E70560005BD53B /* main.m */,
-				AC42EBA418E70560005BD53B /* GoHikeAmsterdam-Info.plist */,
-				AC42EBA518E70560005BD53B /* GoHikeAmsterdam-Prefix.pch */,
+				AC42EBA418E70560005BD53B /* festiGo-Info.plist */,
+				AC42EBA518E70560005BD53B /* festiGo-Prefix.pch */,
 				AC42EBDB18E70560005BD53B /* routeme.plist */,
 				AC42EB9918E70560005BD53B /* InfoPlist.strings */,
 				AC42EB9B18E70560005BD53B /* Localizable.strings */,
@@ -825,7 +825,7 @@
 			isa = PBXGroup;
 			children = (
 				AC303F8017C4F53100875910 /* ThirdParties */,
-				AC42EB6B18E70560005BD53B /* GoHikeAmsterdam */,
+				AC42EB6B18E70560005BD53B /* festiGo */,
 				ACDD9BDF1743E8D700D64682 /* Assets */,
 				ACDD9B6A1743B20200D64682 /* Frameworks */,
 				ACDD9B691743B20200D64682 /* Products */,
@@ -835,7 +835,7 @@
 		ACDD9B691743B20200D64682 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				ACDD9B681743B20200D64682 /* GoHikeAmsterdam.app */,
+				ACDD9B681743B20200D64682 /* festiGo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -887,9 +887,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		ACDD9B671743B20200D64682 /* GoHikeAmsterdam */ = {
+		ACDD9B671743B20200D64682 /* festiGo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ACDD9B8B1743B20200D64682 /* Build configuration list for PBXNativeTarget "GoHikeAmsterdam" */;
+			buildConfigurationList = ACDD9B8B1743B20200D64682 /* Build configuration list for PBXNativeTarget "festiGo" */;
 			buildPhases = (
 				ACDD9B641743B20200D64682 /* Sources */,
 				ACDD9B651743B20200D64682 /* Frameworks */,
@@ -901,9 +901,9 @@
 			);
 			dependencies = (
 			);
-			name = GoHikeAmsterdam;
+			name = festiGo;
 			productName = ScavengerApp;
-			productReference = ACDD9B681743B20200D64682 /* GoHikeAmsterdam.app */;
+			productReference = ACDD9B681743B20200D64682 /* festiGo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -920,7 +920,7 @@
 					};
 				};
 			};
-			buildConfigurationList = ACDD9B631743B20200D64682 /* Build configuration list for PBXProject "GoHikeAmsterdam" */;
+			buildConfigurationList = ACDD9B631743B20200D64682 /* Build configuration list for PBXProject "festiGo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -934,7 +934,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				ACDD9B671743B20200D64682 /* GoHikeAmsterdam */,
+				ACDD9B671743B20200D64682 /* festiGo */,
 			);
 		};
 /* End PBXProject section */
@@ -956,7 +956,7 @@
 				ACB534D6175654390065D72D /* cloud1.png in Resources */,
 				ACB534D7175654390065D72D /* cloud2.png in Resources */,
 				ACB534D8175654390065D72D /* compass.png in Resources */,
-				AC42EC0818E70560005BD53B /* GoHikeAmsterdam-Info.plist in Resources */,
+				AC42EC0818E70560005BD53B /* festiGo-Info.plist in Resources */,
 				AC42EBF518E70560005BD53B /* LocationDetailTitleCell.xib in Resources */,
 				ACB534D9175654390065D72D /* compassbackground.png in Resources */,
 				ACB534DA175654390065D72D /* disclosureindicator.png in Resources */,
@@ -1207,9 +1207,9 @@
 					"\"$(SRCROOT)\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GoHikeAmsterdam/GoHikeAmsterdam-Prefix.pch";
+				GCC_PREFIX_HEADER = "festiGo/festiGo-Prefix.pch";
 				HEADER_SEARCH_PATHS = "$PROJECT_DIR/Mantle/**";
-				INFOPLIST_FILE = "GoHikeAmsterdam/GoHikeAmsterdam-Info.plist";
+				INFOPLIST_FILE = "festiGo/festiGo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1219,7 +1219,7 @@
 					"-objC",
 					"-all_load",
 				);
-				PRODUCT_NAME = GoHikeAmsterdam;
+				PRODUCT_NAME = festiGo;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "DA7C2EB8-8AFC-4EF5-8840-7CD30ECDBC43";
 				WRAPPER_EXTENSION = app;
@@ -1297,9 +1297,9 @@
 					"\"$(SRCROOT)\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GoHikeAmsterdam/GoHikeAmsterdam-Prefix.pch";
+				GCC_PREFIX_HEADER = "festiGo/festiGo-Prefix.pch";
 				HEADER_SEARCH_PATHS = "$PROJECT_DIR/Mantle/**";
-				INFOPLIST_FILE = "GoHikeAmsterdam/GoHikeAmsterdam-Info.plist";
+				INFOPLIST_FILE = "festiGo/festiGo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1309,7 +1309,7 @@
 					"-objC",
 					"-all_load",
 				);
-				PRODUCT_NAME = GoHikeAmsterdam;
+				PRODUCT_NAME = festiGo;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
@@ -1330,9 +1330,9 @@
 					"\"$(SRCROOT)\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GoHikeAmsterdam/GoHikeAmsterdam-Prefix.pch";
+				GCC_PREFIX_HEADER = "festiGo/festiGo-Prefix.pch";
 				HEADER_SEARCH_PATHS = "$PROJECT_DIR/Mantle/**";
-				INFOPLIST_FILE = "GoHikeAmsterdam/GoHikeAmsterdam-Info.plist";
+				INFOPLIST_FILE = "festiGo/festiGo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1342,7 +1342,7 @@
 					"-objC",
 					"-all_load",
 				);
-				PRODUCT_NAME = GoHikeAmsterdam;
+				PRODUCT_NAME = festiGo;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
@@ -1352,7 +1352,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		ACDD9B631743B20200D64682 /* Build configuration list for PBXProject "GoHikeAmsterdam" */ = {
+		ACDD9B631743B20200D64682 /* Build configuration list for PBXProject "festiGo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ACDD9B891743B20200D64682 /* Debug */,
@@ -1362,7 +1362,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ACDD9B8B1743B20200D64682 /* Build configuration list for PBXNativeTarget "GoHikeAmsterdam" */ = {
+		ACDD9B8B1743B20200D64682 /* Build configuration list for PBXNativeTarget "festiGo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ACDD9B8C1743B20200D64682 /* Debug */,
