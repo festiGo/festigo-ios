@@ -90,15 +90,6 @@
     NSLog(@"Launchoptions: %@", launchOptions);
 #endif
     
-#if !TARGET_IPHONE_SIMULATOR
-    //TestFlight
-#warning Check that the following lines are commented out for submission to App Store
-//    if([[[UIDevice currentDevice] systemVersion] floatValue] < 7.0)
-//    [TestFlight setDeviceIdentifier:[[UIDevice currentDevice] uniqueIdentifier]];
-
-    [TestFlight takeOff:kTestFlightAPIKey];
-#endif
-    
     //Customize appearance iOS5
     [self customizeAppearance];
     

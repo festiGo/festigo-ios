@@ -461,7 +461,7 @@
 - (void)onRouteFinished
 {
     //This is called when user exists from the route screen
-    [TestFlight passCheckpoint:@"UserHasFinishedRoute"];
+    //TODO: put analytics here
     showRewardOnAppear = TRUE;
 }
 

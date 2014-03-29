@@ -179,7 +179,6 @@
 		ACDD9B701743B20200D64682 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACDD9B6F1743B20200D64682 /* CoreGraphics.framework */; };
 		ACDD9BEA1743EBAB00D64682 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACDD9BE91743EBAB00D64682 /* QuartzCore.framework */; };
 		ACE2AD4017628D94004C6AF8 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACE2AD3F17628D94004C6AF8 /* AdSupport.framework */; };
-		ACFC841317D4D89E00FB252E /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ACFC840D17D4D86000FB252E /* libTestFlight.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -424,10 +423,6 @@
 		ACDD9B6F1743B20200D64682 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		ACDD9BE91743EBAB00D64682 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		ACE2AD3F17628D94004C6AF8 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
-		ACFC840D17D4D86000FB252E /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libTestFlight.a; path = TestFlightSDK2.0.0/libTestFlight.a; sourceTree = "<group>"; };
-		ACFC841017D4D87700FB252E /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestFlight.h; path = TestFlightSDK2.0.0/TestFlight.h; sourceTree = "<group>"; };
-		ACFC841117D4D87700FB252E /* TestFlight+AsyncLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "TestFlight+AsyncLogging.h"; path = "TestFlightSDK2.0.0/TestFlight+AsyncLogging.h"; sourceTree = "<group>"; };
-		ACFC841217D4D87700FB252E /* TestFlight+ManualSessions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "TestFlight+ManualSessions.h"; path = "TestFlightSDK2.0.0/TestFlight+ManualSessions.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -435,7 +430,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACFC841317D4D89E00FB252E /* libTestFlight.a in Frameworks */,
 				AC06F91517CFE3DB002E6B67 /* libsqlite3.dylib in Frameworks */,
 				AC06F91317CFE3B7002E6B67 /* Accounts.framework in Frameworks */,
 				ACE2AD4017628D94004C6AF8 /* AdSupport.framework in Frameworks */,
@@ -523,7 +517,6 @@
 		AC303F8017C4F53100875910 /* ThirdParties */ = {
 			isa = PBXGroup;
 			children = (
-				ACFC840F17D4D86A00FB252E /* TestFlight */,
 				AC303F8117C4F54400875910 /* SVProgressHUD */,
 				AC30AEEE1768BE01008449BD /* SIAlertView */,
 				AC844BF717629EE30092D79C /* SSKeychain */,
@@ -843,7 +836,6 @@
 		ACDD9B6A1743B20200D64682 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				ACFC840D17D4D86000FB252E /* libTestFlight.a */,
 				AC06F91617CFE3EC002E6B67 /* FacebookSDK Stuff */,
 				ACE2AD3F17628D94004C6AF8 /* AdSupport.framework */,
 				AC41F7FC1761EAC100ED3F14 /* AudioToolbox.framework */,
@@ -872,16 +864,6 @@
 				AC5BEDA8174CC82D0067F08F /* default-profile.png */,
 			);
 			path = Assets;
-			sourceTree = "<group>";
-		};
-		ACFC840F17D4D86A00FB252E /* TestFlight */ = {
-			isa = PBXGroup;
-			children = (
-				ACFC841017D4D87700FB252E /* TestFlight.h */,
-				ACFC841117D4D87700FB252E /* TestFlight+AsyncLogging.h */,
-				ACFC841217D4D87700FB252E /* TestFlight+ManualSessions.h */,
-			);
-			name = TestFlight;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
