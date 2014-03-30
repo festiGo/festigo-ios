@@ -123,6 +123,7 @@
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
             cell.backgroundColor = [UIColor clearColor];
             cell.backgroundView = [[UIView alloc] initWithFrame:CGRectZero];
+            cell.backgroundColor = [Utilities cellBackgroundColor];
             
             
             UIButton *clearCacheButton = [self makeButtonForCell:cell];

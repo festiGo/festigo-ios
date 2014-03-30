@@ -78,6 +78,8 @@
     refreshControl.tintColor = [UIColor grayColor];
     self.refreshControl = refreshControl;
     
+    //festiGo Styling
+    [self.tableView setSeparatorColor:[UIColor clearColor]];    
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -148,7 +150,7 @@
             break;
     }
     
-    cell.textLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:16.0];
+    cell.textLabel.font = [UIFont fontWithName:@"AdelleBasic-BoldItalic" size:16.0];
     
     return cell;
 }

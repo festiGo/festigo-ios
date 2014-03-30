@@ -16,6 +16,7 @@
 #import "CannotPlayViewController.h"
 #import "CatalogViewController.h"
 #import "SIAlertView.h"
+#import <HockeySDK/HockeySDK.h>
 
 @implementation AppDelegate
 
@@ -31,14 +32,14 @@
     // Customize the title text for *all* UINavigationBars
     [[UINavigationBar appearance] setTitleTextAttributes:
      [NSDictionary dictionaryWithObjectsAndKeys:
-      [UIColor colorWithRed:255.0/255.0 green:255.0/255.0 blue:255.0/255.0 alpha:1.0],
+      [UIColor whiteColor],
       UITextAttributeTextColor,
       //[UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.8],
       //UITextAttributeTextShadowColor,
       //[NSValue valueWithUIOffset:UIOffsetMake(0, -1)],
       //UITextAttributeTextShadowOffset,
-      [UIFont fontWithName:@"HelveticaNeue" size:18.0],
-      UITextAttributeFont,
+      [UIFont fontWithName:@"AdelleBasic-BoldItalic" size:20.0],
+      NSFontAttributeName,
       nil]];
     
     UIImage *backButton = [[UIImage imageNamed:@"back.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 14, 0, 4)];
@@ -56,6 +57,10 @@
     [[SIAlertView appearance] setMessageColor:color];
     [[SIAlertView appearance] setCornerRadius:12];
     [[SIAlertView appearance] setShadowRadius:20];
+    
+    if ([self.window respondsToSelector:@selector(setTintColor:)]) {
+        [self.window setTintColor:[Utilities appColor]];
+    }
     
 }
 
@@ -89,6 +94,11 @@
 #if DEBUG
     NSLog(@"Launchoptions: %@", launchOptions);
 #endif
+    
+    [[BITHockeyManager sharedHockeyManager] configureWithIdentifier:kHockeySDKAPIKey];
+    [[BITHockeyManager sharedHockeyManager] startManager];
+    [[BITHockeyManager sharedHockeyManager].authenticator authenticateInstallation];
+
     
     //Customize appearance iOS5
     [self customizeAppearance];

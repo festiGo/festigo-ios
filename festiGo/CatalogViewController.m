@@ -17,6 +17,8 @@
 #import "HelpView.h"
 #import "SIAlertView.h"
 #import <QuartzCore/QuartzCore.h>
+#import "UIImage+ImageEffects.h"
+#import "SystemVersion.h"
 
 
 #define kSELECTION_CELL_IDENTIFIER @"SelectionCell"
@@ -73,6 +75,7 @@
     [self.collectionView registerNib:[UINib nibWithNibName:kSELECTION_CELL_IDENTIFIER bundle:nil] forCellWithReuseIdentifier:kSELECTION_CELL_IDENTIFIER];
     [self.collectionView registerNib:[UINib nibWithNibName:kSECTION_HEADER_IDENTIFIER bundle:nil] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:kSECTION_HEADER_IDENTIFIER];
     
+    self.title = [[AppState sharedInstance] currentCity].GHname;
         
     //buttons
     [self updateNavigationButtons];
@@ -144,7 +147,8 @@
     }
     
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        UIImage *cellImage = [UIImage imageWithData:[FileUtilities iconDataForRoute:route]];
+        UIColor *tintColor = [UIColor colorWithWhite:1.0 alpha:0.3];
+        UIImage *cellImage = [[UIImage imageWithData:[FileUtilities iconDataForRoute:route]] applyBlurWithRadius:1 tintColor:tintColor saturationDeltaFactor:1.8 maskImage:nil];
         dispatch_async(dispatch_get_main_queue(), ^{
             cell.profileImage.image = cellImage;
             cell.profileImage.layer.cornerRadius = 6;

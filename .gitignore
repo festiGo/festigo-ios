@@ -29,6 +29,9 @@ DerivedData
 .env
 **Secret.h
 
+#HockeySDK
+HockeySDK-iOS
+
 #Pictures, useful in case covered by copyright
 #So that won't be pushed to github
 **Default*png

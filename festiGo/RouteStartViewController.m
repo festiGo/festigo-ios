@@ -57,7 +57,9 @@
     UIView *tablebgView = [[[NSBundle mainBundle] loadNibNamed:@"TableBackground" owner:self options:nil] objectAtIndex:0];
     [self.tableView setBackgroundView:tablebgView];
     [self updateNavigationButtons];
-
+    
+    //festiGo Styling
+    [self.tableView setSeparatorColor:[UIColor clearColor]];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -190,6 +192,7 @@
             UITableViewCell *cell = cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"ButtonCell"];
             cell.selectionStyle = UITableViewCellEditingStyleNone;
             cell.backgroundView = [[UIView alloc] initWithFrame:CGRectZero];
+            cell.backgroundColor = [Utilities cellBackgroundColor];            
 
             
             //button with gradient

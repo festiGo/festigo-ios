@@ -19,8 +19,8 @@
     self = [super initWithFrame:frame];
     if (self) {
         
-        NSArray *images1 = @[@"object-bike"];
-        NSArray *images2 = @[@"object-fries"];
+        NSArray *images1 = @[@"object-bike", @"object-sunglasses"];
+        NSArray *images2 = @[@"object-fries", @"object-balloon"];
 
         //add clouds
         UIImageView *cloud1 = [[UIImageView alloc] initWithImage:[UIImage imageNamed:[images1 objectAtIndex:arc4random_uniform(2)]]];

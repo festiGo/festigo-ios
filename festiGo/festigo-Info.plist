@@ -21,7 +21,7 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1</string>
+	<string>1.0</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleURLTypes</key>
@@ -36,7 +36,7 @@
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>19</string>
+	<string>38</string>
 	<key>FacebookAppID</key>
 	<string>1476023862610566</string>
 	<key>FacebookDisplayName</key>
@@ -47,6 +47,11 @@
 	<string>http://cms.festigo.es/privacy-policy.html</string>
 	<key>TermsOfUseURL</key>
 	<string>http://cms.festigo.es/terms-of-use.html</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>AdelleBasic_BoldItalic.ttf</string>
+		<string>AdelleBasic_Bold.ttf</string>
+	</array>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>location</string>

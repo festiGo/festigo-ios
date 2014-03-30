@@ -13,7 +13,6 @@
 		AC06F90F17CFE375002E6B67 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC06F90E17CFE375002E6B67 /* FacebookSDK.framework */; };
 		AC06F91117CFE38A002E6B67 /* FacebookSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AC06F91017CFE38A002E6B67 /* FacebookSDKResources.bundle */; };
 		AC06F91317CFE3B7002E6B67 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC06F91217CFE3B7002E6B67 /* Accounts.framework */; };
-		AC06F91517CFE3DB002E6B67 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AC06F91417CFE3DB002E6B67 /* libsqlite3.dylib */; };
 		AC0AF4751754AB4600B766E0 /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0AF4631754AB4600B766E0 /* AFHTTPClient.m */; };
 		AC0AF4761754AB4600B766E0 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0AF4651754AB4600B766E0 /* AFHTTPRequestOperation.m */; };
 		AC0AF4771754AB4600B766E0 /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0AF4671754AB4600B766E0 /* AFImageRequestOperation.m */; };
@@ -66,8 +65,6 @@
 		AC42EC0218E70560005BD53B /* DestinationRadarView.m in Sources */ = {isa = PBXBuildFile; fileRef = AC42EB9818E70560005BD53B /* DestinationRadarView.m */; };
 		AC42EC0318E70560005BD53B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AC42EB9918E70560005BD53B /* InfoPlist.strings */; };
 		AC42EC0418E70560005BD53B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AC42EB9B18E70560005BD53B /* Localizable.strings */; };
-		AC42EC0518E70560005BD53B /* NSDataAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = AC42EB9F18E70560005BD53B /* NSDataAdditions.m */; };
-		AC42EC0618E70560005BD53B /* NSLayoutConstraint+EvenDistribution.m in Sources */ = {isa = PBXBuildFile; fileRef = AC42EBA118E70560005BD53B /* NSLayoutConstraint+EvenDistribution.m */; };
 		AC42EC0718E70560005BD53B /* FileUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = AC42EBA318E70560005BD53B /* FileUtilities.m */; };
 		AC42EC0918E70560005BD53B /* GoHikeHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = AC42EBA718E70560005BD53B /* GoHikeHTTPClient.m */; };
 		AC42EC0A18E70560005BD53B /* CitiesOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = AC42EBAA18E70560005BD53B /* CitiesOverlayView.m */; };
@@ -103,12 +100,21 @@
 		AC42EC2918E70560005BD53B /* TableBackground.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC42EBE518E70560005BD53B /* TableBackground.xib */; };
 		AC42EC2A18E70560005BD53B /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = AC42EBE718E70560005BD53B /* Utilities.m */; };
 		AC42EC2D18E70708005BD53B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC42EC2C18E70708005BD53B /* Images.xcassets */; };
-		AC42EC3118E7312B005BD53B /* AdelleBasic_Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC42EC2F18E7312B005BD53B /* AdelleBasic_Bold.otf */; };
-		AC42EC3218E7312B005BD53B /* AdelleBasic_BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC42EC3018E7312B005BD53B /* AdelleBasic_BoldItalic.otf */; };
 		AC42EC3418E73ADB005BD53B /* amsterdamcentrum.gpx in Resources */ = {isa = PBXBuildFile; fileRef = AC42EC3318E73ADB005BD53B /* amsterdamcentrum.gpx */; };
 		AC5BEDA9174CC82D0067F08F /* default-profile.png in Resources */ = {isa = PBXBuildFile; fileRef = AC5BEDA8174CC82D0067F08F /* default-profile.png */; };
+		AC81E86B18E891B00074C301 /* HockeySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC81E86718E891B00074C301 /* HockeySDK.framework */; };
+		AC81E86C18E891B00074C301 /* HockeySDK.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = AC81E86918E891B00074C301 /* HockeySDK.xcconfig */; };
+		AC81E86D18E891B00074C301 /* HockeySDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AC81E86A18E891B00074C301 /* HockeySDKResources.bundle */; };
+		AC81E86F18E891BF0074C301 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC81E86E18E891BF0074C301 /* CoreText.framework */; };
 		AC844BFA17629EE30092D79C /* SSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = AC844BF917629EE30092D79C /* SSKeychain.m */; };
 		ACC893B6175F7A3C002AC636 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ACC893B5175F7A3C002AC636 /* libz.dylib */; };
+		ACDBD96C18E886510063AAB7 /* NSDataAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDBD96918E886510063AAB7 /* NSDataAdditions.m */; };
+		ACDBD96D18E886510063AAB7 /* NSLayoutConstraint+EvenDistribution.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDBD96B18E886510063AAB7 /* NSLayoutConstraint+EvenDistribution.m */; };
+		ACDBD97018E886C10063AAB7 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDBD96F18E886C10063AAB7 /* UIImage+ImageEffects.m */; };
+		ACDBD97A18E8892A0063AAB7 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACDBD97918E889290063AAB7 /* Accelerate.framework */; };
+		ACDBD97B18E889650063AAB7 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AC06F91417CFE3DB002E6B67 /* libsqlite3.dylib */; };
+		ACDBD97C18E88B260063AAB7 /* AdelleBasic_BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ACDBD97118E886D70063AAB7 /* AdelleBasic_BoldItalic.ttf */; };
+		ACDBD97D18E88B280063AAB7 /* AdelleBasic_Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ACDBD97218E886EF0063AAB7 /* AdelleBasic_Bold.ttf */; };
 		ACDD9B6C1743B20200D64682 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACDD9B6B1743B20200D64682 /* UIKit.framework */; };
 		ACDD9B6E1743B20200D64682 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACDD9B6D1743B20200D64682 /* Foundation.framework */; };
 		ACDD9B701743B20200D64682 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACDD9B6F1743B20200D64682 /* CoreGraphics.framework */; };
@@ -210,14 +216,10 @@
 		AC42EB9818E70560005BD53B /* DestinationRadarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DestinationRadarView.m; sourceTree = "<group>"; };
 		AC42EB9A18E70560005BD53B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AC42EB9C18E70560005BD53B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		AC42EB9E18E70560005BD53B /* NSDataAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDataAdditions.h; sourceTree = "<group>"; };
-		AC42EB9F18E70560005BD53B /* NSDataAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDataAdditions.m; sourceTree = "<group>"; };
-		AC42EBA018E70560005BD53B /* NSLayoutConstraint+EvenDistribution.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+EvenDistribution.h"; sourceTree = "<group>"; };
-		AC42EBA118E70560005BD53B /* NSLayoutConstraint+EvenDistribution.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+EvenDistribution.m"; sourceTree = "<group>"; };
 		AC42EBA218E70560005BD53B /* FileUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileUtilities.h; sourceTree = "<group>"; };
 		AC42EBA318E70560005BD53B /* FileUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileUtilities.m; sourceTree = "<group>"; };
-		AC42EBA418E70560005BD53B /* festiGo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "festiGo-Info.plist"; sourceTree = "<group>"; };
-		AC42EBA518E70560005BD53B /* festiGo-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "festiGo-Prefix.pch"; sourceTree = "<group>"; };
+		AC42EBA418E70560005BD53B /* festigo.temp_caseinsensitive_rename.temp_caseinsensitive_rename-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "festigo.temp_caseinsensitive_rename.temp_caseinsensitive_rename-Info.plist"; sourceTree = "<group>"; };
+		AC42EBA518E70560005BD53B /* festigo.temp_caseinsensitive_rename.temp_caseinsensitive_rename-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "festigo.temp_caseinsensitive_rename.temp_caseinsensitive_rename-Prefix.pch"; sourceTree = "<group>"; };
 		AC42EBA618E70560005BD53B /* GoHikeHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoHikeHTTPClient.h; sourceTree = "<group>"; };
 		AC42EBA718E70560005BD53B /* GoHikeHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoHikeHTTPClient.m; sourceTree = "<group>"; };
 		AC42EBA918E70560005BD53B /* CitiesOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CitiesOverlayView.h; sourceTree = "<group>"; };
@@ -281,14 +283,27 @@
 		AC42EBE618E70560005BD53B /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
 		AC42EBE718E70560005BD53B /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
 		AC42EC2C18E70708005BD53B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		AC42EC2F18E7312B005BD53B /* AdelleBasic_Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AdelleBasic_Bold.otf; sourceTree = "<group>"; };
-		AC42EC3018E7312B005BD53B /* AdelleBasic_BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AdelleBasic_BoldItalic.otf; sourceTree = "<group>"; };
 		AC42EC3318E73ADB005BD53B /* amsterdamcentrum.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = amsterdamcentrum.gpx; sourceTree = "<group>"; };
 		AC5BEDA8174CC82D0067F08F /* default-profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default-profile.png"; sourceTree = "<group>"; };
+		AC81E86718E891B00074C301 /* HockeySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HockeySDK.framework; sourceTree = "<group>"; };
+		AC81E86918E891B00074C301 /* HockeySDK.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = HockeySDK.xcconfig; sourceTree = "<group>"; };
+		AC81E86A18E891B00074C301 /* HockeySDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HockeySDKResources.bundle; sourceTree = "<group>"; };
+		AC81E86E18E891BF0074C301 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		AC844BF817629EE30092D79C /* SSKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSKeychain.h; sourceTree = "<group>"; };
 		AC844BF917629EE30092D79C /* SSKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSKeychain.m; sourceTree = "<group>"; };
 		ACC893B5175F7A3C002AC636 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		ACDD9B681743B20200D64682 /* festiGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = festiGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACDBD96818E886510063AAB7 /* NSDataAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDataAdditions.h; sourceTree = "<group>"; };
+		ACDBD96918E886510063AAB7 /* NSDataAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDataAdditions.m; sourceTree = "<group>"; };
+		ACDBD96A18E886510063AAB7 /* NSLayoutConstraint+EvenDistribution.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+EvenDistribution.h"; sourceTree = "<group>"; };
+		ACDBD96B18E886510063AAB7 /* NSLayoutConstraint+EvenDistribution.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+EvenDistribution.m"; sourceTree = "<group>"; };
+		ACDBD96E18E886C10063AAB7 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		ACDBD96F18E886C10063AAB7 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		ACDBD97118E886D70063AAB7 /* AdelleBasic_BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AdelleBasic_BoldItalic.ttf; sourceTree = "<group>"; };
+		ACDBD97218E886EF0063AAB7 /* AdelleBasic_Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AdelleBasic_Bold.ttf; sourceTree = "<group>"; };
+		ACDBD97618E887F40063AAB7 /* SystemVersion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SystemVersion.h; sourceTree = "<group>"; };
+		ACDBD97718E8890A0063AAB7 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		ACDBD97918E889290063AAB7 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		ACDD9B681743B20200D64682 /* festigo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = festigo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACDD9B6B1743B20200D64682 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		ACDD9B6D1743B20200D64682 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		ACDD9B6F1743B20200D64682 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -301,19 +316,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC06F91517CFE3DB002E6B67 /* libsqlite3.dylib in Frameworks */,
+				AC0AF4B0175633B700B766E0 /* Security.framework in Frameworks */,
+				ACDD9B701743B20200D64682 /* CoreGraphics.framework in Frameworks */,
+				AC81E86F18E891BF0074C301 /* CoreText.framework in Frameworks */,
+				ACDBD97B18E889650063AAB7 /* libsqlite3.dylib in Frameworks */,
+				ACDBD97A18E8892A0063AAB7 /* Accelerate.framework in Frameworks */,
 				AC06F91317CFE3B7002E6B67 /* Accounts.framework in Frameworks */,
 				ACE2AD4017628D94004C6AF8 /* AdSupport.framework in Frameworks */,
 				AC41F7FD1761EAC100ED3F14 /* AudioToolbox.framework in Frameworks */,
 				ACC893B6175F7A3C002AC636 /* libz.dylib in Frameworks */,
-				AC0AF4B0175633B700B766E0 /* Security.framework in Frameworks */,
 				AC0AF4891754BA6A00B766E0 /* MobileCoreServices.framework in Frameworks */,
 				AC0AF4871754BA6300B766E0 /* SystemConfiguration.framework in Frameworks */,
 				1CB18469174BC0A500D71DA4 /* CoreLocation.framework in Frameworks */,
 				ACDD9BEA1743EBAB00D64682 /* QuartzCore.framework in Frameworks */,
 				ACDD9B6C1743B20200D64682 /* UIKit.framework in Frameworks */,
 				ACDD9B6E1743B20200D64682 /* Foundation.framework in Frameworks */,
-				ACDD9B701743B20200D64682 /* CoreGraphics.framework in Frameworks */,
+				AC81E86B18E891B00074C301 /* HockeySDK.framework in Frameworks */,
 				A726AA73175DEA9F00C7F8E6 /* Social.framework in Frameworks */,
 				A71CF122175E3BEB00FA2168 /* MapKit.framework in Frameworks */,
 				AC06F90F17CFE375002E6B67 /* FacebookSDK.framework in Frameworks */,
@@ -428,78 +446,47 @@
 			path = Sounds;
 			sourceTree = "<group>";
 		};
-		AC42EB6B18E70560005BD53B /* festiGo */ = {
+		AC42EB6B18E70560005BD53B /* festigo */ = {
 			isa = PBXGroup;
 			children = (
+				ACDBD96718E886510063AAB7 /* Categories */,
 				AC42EBBC18E70560005BD53B /* Model */,
-				AC42EB9D18E70560005BD53B /* Extensions */,
 				AC42EB7618E70560005BD53B /* Cells */,
-				AC42EC2B18E70599005BD53B /* Supporting Files */,
+				ACDBD96518E885E10063AAB7 /* Catalog */,
+				ACDBD96418E885D80063AAB7 /* CheckinView */,
+				ACDBD96318E885C90063AAB7 /* Compass and Navigation Views */,
+				AC42EBA818E70560005BD53B /* HelpViews */,
+				ACDBD97318E887270063AAB7 /* Location Detail */,
 				AC42EB6C18E70560005BD53B /* AppDelegate.h */,
 				AC42EB6D18E70560005BD53B /* AppDelegate.m */,
 				AC42EB6E18E70560005BD53B /* AppState.h */,
 				AC42EB6F18E70560005BD53B /* AppState.m */,
+				AC42EBDC18E70560005BD53B /* RouteStartViewController.h */,
+				AC42EBDD18E70560005BD53B /* RouteStartViewController.m */,
 				AC42EB7018E70560005BD53B /* CannotPlayViewController.h */,
 				AC42EB7118E70560005BD53B /* CannotPlayViewController.m */,
 				AC42EB7218E70560005BD53B /* CannotPlayViewController.xib */,
-				AC42EB7318E70560005BD53B /* CatalogViewController.h */,
-				AC42EB7418E70560005BD53B /* CatalogViewController.m */,
-				AC42EB7518E70560005BD53B /* CatalogViewController.xib */,
-				AC42EB8618E70560005BD53B /* CheckinView.h */,
-				AC42EB8718E70560005BD53B /* CheckinView.m */,
-				AC42EB8818E70560005BD53B /* CheckinView.xib */,
 				AC42EB8918E70560005BD53B /* CitySelectionViewController.h */,
 				AC42EB8A18E70560005BD53B /* CitySelectionViewController.m */,
-				AC42EB8B18E70560005BD53B /* CloudView.h */,
-				AC42EB8C18E70560005BD53B /* CloudView.m */,
-				AC42EB8D18E70560005BD53B /* CompassTopView.h */,
-				AC42EB8E18E70560005BD53B /* CompassTopView.m */,
-				AC42EB8F18E70560005BD53B /* CompassTopView.xib */,
-				AC42EB9018E70560005BD53B /* CompassViewController.h */,
-				AC42EB9118E70560005BD53B /* CompassViewController.m */,
-				AC42EB9218E70560005BD53B /* CompassViewController.xib */,
-				AC42EB9318E70560005BD53B /* CustomBarButtonViewLeft.h */,
-				AC42EB9418E70560005BD53B /* CustomBarButtonViewLeft.m */,
-				AC42EB9518E70560005BD53B /* CustomBarButtonViewRight.h */,
-				AC42EB9618E70560005BD53B /* CustomBarButtonViewRight.m */,
-				AC42EB9718E70560005BD53B /* DestinationRadarView.h */,
-				AC42EB9818E70560005BD53B /* DestinationRadarView.m */,
+				ACDBD96618E885F00063AAB7 /* Custom Navigationbar Views */,
 				AC42EBA218E70560005BD53B /* FileUtilities.h */,
 				AC42EBA318E70560005BD53B /* FileUtilities.m */,
 				AC42EBA618E70560005BD53B /* GoHikeHTTPClient.h */,
 				AC42EBA718E70560005BD53B /* GoHikeHTTPClient.m */,
-				AC42EBA818E70560005BD53B /* HelpViews */,
-				AC42EBB218E70560005BD53B /* LocationDetailTableViewController.h */,
-				AC42EBB318E70560005BD53B /* LocationDetailTableViewController.m */,
-				AC42EBB418E70560005BD53B /* LocationDetailViewController.h */,
-				AC42EBB518E70560005BD53B /* LocationDetailViewController.m */,
-				AC42EBB618E70560005BD53B /* LocationDetailViewController.xib */,
 				AC42EBB818E70560005BD53B /* MapPoint.h */,
 				AC42EBB918E70560005BD53B /* MapPoint.m */,
 				AC42EBBA18E70560005BD53B /* MapViewController.h */,
 				AC42EBBB18E70560005BD53B /* MapViewController.m */,
-				AC42EBD018E70560005BD53B /* NavigationStatusView.h */,
-				AC42EBD118E70560005BD53B /* NavigationStatusView.m */,
-				AC42EBD218E70560005BD53B /* NavigationStatusView.xib */,
-				AC42EBD518E70560005BD53B /* OverlayView.h */,
-				AC42EBD618E70560005BD53B /* OverlayView.m */,
-				AC42EBD718E70560005BD53B /* OverlayView.xib */,
 				AC42EBD818E70560005BD53B /* RewardViewController.h */,
 				AC42EBD918E70560005BD53B /* RewardViewController.m */,
 				AC42EBDA18E70560005BD53B /* RewardViewController.xib */,
-				AC42EBDC18E70560005BD53B /* RouteStartViewController.h */,
-				AC42EBDD18E70560005BD53B /* RouteStartViewController.m */,
-				AC42EBDE18E70560005BD53B /* Secret.h */,
-				AC42EBDF18E70560005BD53B /* SelectionCell.h */,
-				AC42EBE018E70560005BD53B /* SelectionCell.m */,
-				AC42EBE118E70560005BD53B /* SelectionCell.xib */,
 				AC42EBE218E70560005BD53B /* Settings */,
 				AC42EBE518E70560005BD53B /* TableBackground.xib */,
 				AC42EBE618E70560005BD53B /* Utilities.h */,
 				AC42EBE718E70560005BD53B /* Utilities.m */,
-				AC42EC2C18E70708005BD53B /* Images.xcassets */,
+				AC42EC2B18E70599005BD53B /* Supporting Files */,
 			);
-			path = festiGo;
+			path = festigo;
 			sourceTree = "<group>";
 		};
 		AC42EB7618E70560005BD53B /* Cells */ = {
@@ -522,17 +509,6 @@
 				AC42EB8518E70560005BD53B /* RouteDetailTitleCell.xib */,
 			);
 			path = Cells;
-			sourceTree = "<group>";
-		};
-		AC42EB9D18E70560005BD53B /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				AC42EB9E18E70560005BD53B /* NSDataAdditions.h */,
-				AC42EB9F18E70560005BD53B /* NSDataAdditions.m */,
-				AC42EBA018E70560005BD53B /* NSLayoutConstraint+EvenDistribution.h */,
-				AC42EBA118E70560005BD53B /* NSLayoutConstraint+EvenDistribution.m */,
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 		AC42EBA818E70560005BD53B /* HelpViews */ = {
@@ -586,12 +562,15 @@
 		AC42EC2B18E70599005BD53B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AC42EBDE18E70560005BD53B /* Secret.h */,
+				AC42EC2C18E70708005BD53B /* Images.xcassets */,
 				AC42EBB718E70560005BD53B /* main.m */,
-				AC42EBA418E70560005BD53B /* festiGo-Info.plist */,
-				AC42EBA518E70560005BD53B /* festiGo-Prefix.pch */,
+				AC42EBA418E70560005BD53B /* festigo.temp_caseinsensitive_rename.temp_caseinsensitive_rename-Info.plist */,
+				AC42EBA518E70560005BD53B /* festigo.temp_caseinsensitive_rename.temp_caseinsensitive_rename-Prefix.pch */,
 				AC42EBDB18E70560005BD53B /* routeme.plist */,
 				AC42EB9918E70560005BD53B /* InfoPlist.strings */,
 				AC42EB9B18E70560005BD53B /* Localizable.strings */,
+				ACDBD97618E887F40063AAB7 /* SystemVersion.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -599,10 +578,29 @@
 		AC42EC2E18E7312B005BD53B /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				AC42EC2F18E7312B005BD53B /* AdelleBasic_Bold.otf */,
-				AC42EC3018E7312B005BD53B /* AdelleBasic_BoldItalic.otf */,
+				ACDBD97218E886EF0063AAB7 /* AdelleBasic_Bold.ttf */,
+				ACDBD97118E886D70063AAB7 /* AdelleBasic_BoldItalic.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		AC81E86618E891B00074C301 /* HockeySDK.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				AC81E86718E891B00074C301 /* HockeySDK.framework */,
+				AC81E86818E891B00074C301 /* Resources */,
+			);
+			name = HockeySDK.embeddedframework;
+			path = "HockeySDK-iOS/HockeySDK.embeddedframework";
+			sourceTree = "<group>";
+		};
+		AC81E86818E891B00074C301 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AC81E86918E891B00074C301 /* HockeySDK.xcconfig */,
+				AC81E86A18E891B00074C301 /* HockeySDKResources.bundle */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		AC844BF717629EE30092D79C /* SSKeychain */ = {
@@ -614,12 +612,94 @@
 			path = SSKeychain;
 			sourceTree = "<group>";
 		};
+		ACDBD96318E885C90063AAB7 /* Compass and Navigation Views */ = {
+			isa = PBXGroup;
+			children = (
+				AC42EBD018E70560005BD53B /* NavigationStatusView.h */,
+				AC42EBD118E70560005BD53B /* NavigationStatusView.m */,
+				AC42EBD218E70560005BD53B /* NavigationStatusView.xib */,
+				AC42EB9718E70560005BD53B /* DestinationRadarView.h */,
+				AC42EB9818E70560005BD53B /* DestinationRadarView.m */,
+				AC42EB8B18E70560005BD53B /* CloudView.h */,
+				AC42EB8C18E70560005BD53B /* CloudView.m */,
+				AC42EB8D18E70560005BD53B /* CompassTopView.h */,
+				AC42EB8E18E70560005BD53B /* CompassTopView.m */,
+				AC42EB8F18E70560005BD53B /* CompassTopView.xib */,
+				AC42EB9018E70560005BD53B /* CompassViewController.h */,
+				AC42EB9118E70560005BD53B /* CompassViewController.m */,
+				AC42EB9218E70560005BD53B /* CompassViewController.xib */,
+			);
+			name = "Compass and Navigation Views";
+			sourceTree = "<group>";
+		};
+		ACDBD96418E885D80063AAB7 /* CheckinView */ = {
+			isa = PBXGroup;
+			children = (
+				AC42EB8618E70560005BD53B /* CheckinView.h */,
+				AC42EB8718E70560005BD53B /* CheckinView.m */,
+				AC42EB8818E70560005BD53B /* CheckinView.xib */,
+			);
+			name = CheckinView;
+			sourceTree = "<group>";
+		};
+		ACDBD96518E885E10063AAB7 /* Catalog */ = {
+			isa = PBXGroup;
+			children = (
+				AC42EBD518E70560005BD53B /* OverlayView.h */,
+				AC42EBD618E70560005BD53B /* OverlayView.m */,
+				AC42EBD718E70560005BD53B /* OverlayView.xib */,
+				AC42EBDF18E70560005BD53B /* SelectionCell.h */,
+				AC42EBE018E70560005BD53B /* SelectionCell.m */,
+				AC42EBE118E70560005BD53B /* SelectionCell.xib */,
+				AC42EB7318E70560005BD53B /* CatalogViewController.h */,
+				AC42EB7418E70560005BD53B /* CatalogViewController.m */,
+				AC42EB7518E70560005BD53B /* CatalogViewController.xib */,
+			);
+			name = Catalog;
+			sourceTree = "<group>";
+		};
+		ACDBD96618E885F00063AAB7 /* Custom Navigationbar Views */ = {
+			isa = PBXGroup;
+			children = (
+				AC42EB9318E70560005BD53B /* CustomBarButtonViewLeft.h */,
+				AC42EB9418E70560005BD53B /* CustomBarButtonViewLeft.m */,
+				AC42EB9518E70560005BD53B /* CustomBarButtonViewRight.h */,
+				AC42EB9618E70560005BD53B /* CustomBarButtonViewRight.m */,
+			);
+			name = "Custom Navigationbar Views";
+			sourceTree = "<group>";
+		};
+		ACDBD96718E886510063AAB7 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				ACDBD96E18E886C10063AAB7 /* UIImage+ImageEffects.h */,
+				ACDBD96F18E886C10063AAB7 /* UIImage+ImageEffects.m */,
+				ACDBD96818E886510063AAB7 /* NSDataAdditions.h */,
+				ACDBD96918E886510063AAB7 /* NSDataAdditions.m */,
+				ACDBD96A18E886510063AAB7 /* NSLayoutConstraint+EvenDistribution.h */,
+				ACDBD96B18E886510063AAB7 /* NSLayoutConstraint+EvenDistribution.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		ACDBD97318E887270063AAB7 /* Location Detail */ = {
+			isa = PBXGroup;
+			children = (
+				AC42EBB218E70560005BD53B /* LocationDetailTableViewController.h */,
+				AC42EBB318E70560005BD53B /* LocationDetailTableViewController.m */,
+				AC42EBB418E70560005BD53B /* LocationDetailViewController.h */,
+				AC42EBB518E70560005BD53B /* LocationDetailViewController.m */,
+				AC42EBB618E70560005BD53B /* LocationDetailViewController.xib */,
+			);
+			name = "Location Detail";
+			sourceTree = "<group>";
+		};
 		ACDD9B5F1743B20200D64682 = {
 			isa = PBXGroup;
 			children = (
 				AC42EC3318E73ADB005BD53B /* amsterdamcentrum.gpx */,
 				AC303F8017C4F53100875910 /* ThirdParties */,
-				AC42EB6B18E70560005BD53B /* festiGo */,
+				AC42EB6B18E70560005BD53B /* festigo */,
 				ACDD9BDF1743E8D700D64682 /* Assets */,
 				ACDD9B6A1743B20200D64682 /* Frameworks */,
 				ACDD9B691743B20200D64682 /* Products */,
@@ -629,7 +709,7 @@
 		ACDD9B691743B20200D64682 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				ACDD9B681743B20200D64682 /* festiGo.app */,
+				ACDD9B681743B20200D64682 /* festigo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -637,6 +717,10 @@
 		ACDD9B6A1743B20200D64682 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AC81E86E18E891BF0074C301 /* CoreText.framework */,
+				AC81E86618E891B00074C301 /* HockeySDK.embeddedframework */,
+				ACDBD97918E889290063AAB7 /* Accelerate.framework */,
+				ACDBD97718E8890A0063AAB7 /* CoreImage.framework */,
 				AC06F91617CFE3EC002E6B67 /* FacebookSDK Stuff */,
 				ACE2AD3F17628D94004C6AF8 /* AdSupport.framework */,
 				AC41F7FC1761EAC100ED3F14 /* AudioToolbox.framework */,
@@ -668,9 +752,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		ACDD9B671743B20200D64682 /* festiGo */ = {
+		ACDD9B671743B20200D64682 /* festigo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ACDD9B8B1743B20200D64682 /* Build configuration list for PBXNativeTarget "festiGo" */;
+			buildConfigurationList = ACDD9B8B1743B20200D64682 /* Build configuration list for PBXNativeTarget "festigo" */;
 			buildPhases = (
 				ACDD9B641743B20200D64682 /* Sources */,
 				ACDD9B651743B20200D64682 /* Frameworks */,
@@ -682,9 +766,9 @@
 			);
 			dependencies = (
 			);
-			name = festiGo;
+			name = festigo;
 			productName = ScavengerApp;
-			productReference = ACDD9B681743B20200D64682 /* festiGo.app */;
+			productReference = ACDD9B681743B20200D64682 /* festigo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -694,14 +778,14 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0460;
-				ORGANIZATIONNAME = "Code for Europe";
+				ORGANIZATIONNAME = festiGo;
 				TargetAttributes = {
 					ACDD9B671743B20200D64682 = {
 						DevelopmentTeam = ZPTT5KP29C;
 					};
 				};
 			};
-			buildConfigurationList = ACDD9B631743B20200D64682 /* Build configuration list for PBXProject "festiGo" */;
+			buildConfigurationList = ACDD9B631743B20200D64682 /* Build configuration list for PBXProject "festigo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -715,7 +799,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				ACDD9B671743B20200D64682 /* festiGo */,
+				ACDD9B671743B20200D64682 /* festigo */,
 			);
 		};
 /* End PBXProject section */
@@ -725,7 +809,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC42EC3118E7312B005BD53B /* AdelleBasic_Bold.otf in Resources */,
 				AC5BEDA9174CC82D0067F08F /* default-profile.png in Resources */,
 				AC42EC2318E70560005BD53B /* RewardViewController.xib in Resources */,
 				AC42EBFF18E70560005BD53B /* CompassViewController.xib in Resources */,
@@ -747,15 +830,18 @@
 				AC42EBF918E70560005BD53B /* CheckinView.xib in Resources */,
 				AC42EC3418E73ADB005BD53B /* amsterdamcentrum.gpx in Resources */,
 				AC42EBFD18E70560005BD53B /* CompassTopView.xib in Resources */,
-				AC42EC3218E7312B005BD53B /* AdelleBasic_BoldItalic.otf in Resources */,
 				AC42EC1F18E70560005BD53B /* NavigationStatusView.xib in Resources */,
+				AC81E86C18E891B00074C301 /* HockeySDK.xcconfig in Resources */,
 				AC41F8011761FE8400ED3F14 /* fanfare.mp3 in Resources */,
 				AC41F8021761FE8400ED3F14 /* success.mp3 in Resources */,
 				AC30AEF21768BE01008449BD /* SIAlertView.bundle in Resources */,
 				AC303F8517C4F54400875910 /* SVProgressHUD.bundle in Resources */,
 				AC42EC2918E70560005BD53B /* TableBackground.xib in Resources */,
 				AC42EC2418E70560005BD53B /* routeme.plist in Resources */,
+				AC81E86D18E891B00074C301 /* HockeySDKResources.bundle in Resources */,
 				AC06F91117CFE38A002E6B67 /* FacebookSDKResources.bundle in Resources */,
+				ACDBD97D18E88B280063AAB7 /* AdelleBasic_Bold.ttf in Resources */,
+				ACDBD97C18E88B260063AAB7 /* AdelleBasic_BoldItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -812,6 +898,7 @@
 				AC42EC1318E70560005BD53B /* MapPoint.m in Sources */,
 				AC0AF4751754AB4600B766E0 /* AFHTTPClient.m in Sources */,
 				AC42EC0C18E70560005BD53B /* HelpView.m in Sources */,
+				ACDBD96D18E886510063AAB7 /* NSLayoutConstraint+EvenDistribution.m in Sources */,
 				AC0AF4761754AB4600B766E0 /* AFHTTPRequestOperation.m in Sources */,
 				AC0AF4771754AB4600B766E0 /* AFImageRequestOperation.m in Sources */,
 				AC42EBF018E70560005BD53B /* LocationDetailBodyCell.m in Sources */,
@@ -822,7 +909,6 @@
 				AC42EC2818E70560005BD53B /* SettingsViewController.m in Sources */,
 				AC0AF4781754AB4600B766E0 /* AFJSONRequestOperation.m in Sources */,
 				AC42EBF218E70560005BD53B /* LocationDetailPictureCell.m in Sources */,
-				AC42EC0618E70560005BD53B /* NSLayoutConstraint+EvenDistribution.m in Sources */,
 				AC42EC1B18E70560005BD53B /* NSDictionary+GHReward.m in Sources */,
 				AC42EC1A18E70560005BD53B /* NSDictionary+GHProfile.m in Sources */,
 				AC0AF4791754AB4600B766E0 /* AFNetworkActivityIndicatorManager.m in Sources */,
@@ -839,12 +925,13 @@
 				AC42EC1718E70560005BD53B /* NSDictionary+GHCities.m in Sources */,
 				AC844BFA17629EE30092D79C /* SSKeychain.m in Sources */,
 				AC42EC0718E70560005BD53B /* FileUtilities.m in Sources */,
+				ACDBD96C18E886510063AAB7 /* NSDataAdditions.m in Sources */,
 				AC42EBEA18E70560005BD53B /* CannotPlayViewController.m in Sources */,
+				ACDBD97018E886C10063AAB7 /* UIImage+ImageEffects.m in Sources */,
 				AC42EC1018E70560005BD53B /* LocationDetailViewController.m in Sources */,
 				AC42EC1518E70560005BD53B /* Checkin.m in Sources */,
 				AC42EC0118E70560005BD53B /* CustomBarButtonViewRight.m in Sources */,
 				AC42EC0018E70560005BD53B /* CustomBarButtonViewLeft.m in Sources */,
-				AC42EC0518E70560005BD53B /* NSDataAdditions.m in Sources */,
 				AC42EC1D18E70560005BD53B /* NSDictionary+GHWaypoint.m in Sources */,
 				AC42EBEC18E70560005BD53B /* CatalogViewController.m in Sources */,
 				AC42EBE818E70560005BD53B /* AppDelegate.m in Sources */,
@@ -884,61 +971,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		AC41F7FA1761EA7E00ED3F14 /* TestFlight */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				SDKROOT = iphoneos;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = TestFlight;
-		};
-		AC41F7FB1761EA7E00ED3F14 /* TestFlight */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "festiGo/festiGo-Prefix.pch";
-				HEADER_SEARCH_PATHS = "";
-				INFOPLIST_FILE = "festiGo/festiGo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				OTHER_LDFLAGS = (
-					"-objC",
-					"-all_load",
-				);
-				PRODUCT_NAME = festiGo;
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "DA7C2EB8-8AFC-4EF5-8840-7CD30ECDBC43";
-				WRAPPER_EXTENSION = app;
-			};
-			name = TestFlight;
-		};
 		ACDD9B891743B20200D64682 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1008,18 +1040,19 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
+					"$(PROJECT_DIR)/HockeySDK-iOS/HockeySDK.embeddedframework",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "festiGo/festiGo-Prefix.pch";
+				GCC_PREFIX_HEADER = "festigo/festigo-Prefix.pch";
 				HEADER_SEARCH_PATHS = "";
-				INFOPLIST_FILE = "festiGo/festiGo-Info.plist";
+				INFOPLIST_FILE = "festiGo/festigo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = (
 					"-objC",
 					"-all_load",
 				);
-				PRODUCT_NAME = festiGo;
+				PRODUCT_NAME = festigo;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
@@ -1032,24 +1065,25 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
+					"$(PROJECT_DIR)/HockeySDK-iOS/HockeySDK.embeddedframework",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "festiGo/festiGo-Prefix.pch";
+				GCC_PREFIX_HEADER = "festigo/festigo-Prefix.pch";
 				HEADER_SEARCH_PATHS = "";
-				INFOPLIST_FILE = "festiGo/festiGo-Info.plist";
+				INFOPLIST_FILE = "festiGo/festigo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = (
 					"-objC",
 					"-all_load",
 				);
-				PRODUCT_NAME = festiGo;
+				PRODUCT_NAME = festigo;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
@@ -1059,22 +1093,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		ACDD9B631743B20200D64682 /* Build configuration list for PBXProject "festiGo" */ = {
+		ACDD9B631743B20200D64682 /* Build configuration list for PBXProject "festigo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ACDD9B891743B20200D64682 /* Debug */,
 				ACDD9B8A1743B20200D64682 /* Release */,
-				AC41F7FA1761EA7E00ED3F14 /* TestFlight */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ACDD9B8B1743B20200D64682 /* Build configuration list for PBXNativeTarget "festiGo" */ = {
+		ACDD9B8B1743B20200D64682 /* Build configuration list for PBXNativeTarget "festigo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ACDD9B8C1743B20200D64682 /* Debug */,
 				ACDD9B8D1743B20200D64682 /* Release */,
-				AC41F7FB1761EA7E00ED3F14 /* TestFlight */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

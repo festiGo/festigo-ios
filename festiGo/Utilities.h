@@ -20,6 +20,7 @@
 + (NSString*)formattedStringFromDate:(NSDate*)date;
 + (NSNumber*)formattedNumberFromDate:(NSDate*)date;
 + (void)clearDownloadedData;
++ (UIColor*)cellBackgroundColor;
 + (UIColor*)appColor;
 
 @end
