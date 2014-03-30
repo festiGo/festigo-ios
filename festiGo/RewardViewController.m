@@ -189,8 +189,8 @@
     
     if(![facebookUsername length] > 0)
     {
-        NSString *title = NSLocalizedString(@"PrivacyAlertViewTitle", @"Connect with Take a Hike?");
-        NSString *message = NSLocalizedString(@"PrivacyAlertViewMessage", @"By continuing, you agree with Take a Hike Terms of Use and Privacy Policy.");
+        NSString *title = NSLocalizedString(@"PrivacyAlertViewTitle", @"Connect with festiGo?");
+        NSString *message = NSLocalizedString(@"PrivacyAlertViewMessage", @"By continuing, you agree with festiGo Terms of Use and Privacy Policy.");
         NSString *termsButtonText = NSLocalizedString(@"PrivacyTermsButtonText", @"View Tems of Use");
         NSString *privacyButtonText = NSLocalizedString(@"PrivacyButtonText", @"View Provacy Policy");
         NSString *agreeTerms = NSLocalizedString(@"PrivacyAgree", @"I agree");

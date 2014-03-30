@@ -337,10 +337,8 @@
     destinationRadarView.checkinRadiusInPixels = 85; //radius of check in area in pix (edge of compass circle)
     destinationRadarView.checkinRadiusInMeters = CHECKIN_DISTANCE;
     
-    
     //add top view with distance
-    _topView = [[[NSBundle mainBundle] loadNibNamed:@"CompassTopView" owner:self options:nil] objectAtIndex:0];
-    
+    _topView = [[[NSBundle mainBundle] loadNibNamed:@"CompassTopView" owner:self options:nil] objectAtIndex:0];    
     
     [self.view addSubview:destinationRadarView];
     [self.view addSubview:cloudView];

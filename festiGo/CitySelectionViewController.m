@@ -79,7 +79,7 @@
     self.refreshControl = refreshControl;
     
     //festiGo Styling
-    [self.tableView setSeparatorColor:[UIColor clearColor]];    
+    [self.tableView setSeparatorColor:[UIColor clearColor]];
 }
 
 - (void)viewWillAppear:(BOOL)animated

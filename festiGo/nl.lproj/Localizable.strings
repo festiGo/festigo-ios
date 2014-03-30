@@ -56,7 +56,7 @@
 "Facebook Error" = "Facebook Error";
 
 /* No comment provided by engineer. */
-"FacebookMessage" = "Ik heb heb de %@ onderscheiding verdiend met de Take a Hike App!";
+"FacebookMessage" = "Ik heb heb de %@ onderscheiding verdiend met de festiGo App!";
 
 /* Inform user they can delete data by pressing button */
 "footer_cache_settings" = "De app slaat routes voor offline spelen.\nU kunt de cache bestanden verwijderen door op de \"Clear offline routes\" knop. Echter, vergeet dan niet moet u een internetverbinding hebben als u wenst om de gegevens opnieuw te downloaden.";
@@ -73,7 +73,7 @@
 "Go ahead" = "Ga door";
 
 /* Go Hike! */
-"Go Hike!" = "Start Hike!";
+"Go Hike!" = "festiGo!";
 
 /* Local Cache Settings header */
 "header_cache_settings" = "Offline Data";
@@ -143,11 +143,11 @@
 /* Posted successfully! */
 "Posted successfully!" = "Succesvol geplaatst!";
 
-/* "Connect this device with Take a Hike?" */
-"PrivacyAlertViewTitle" = "Verbind dit apparaat met Take a Hike?";
+/* "Connect this device with festiGo?" */
+"PrivacyAlertViewTitle" = "Verbind dit apparaat met festiGo?";
 
-/* By continuing, you agree with Take a Hike Terms of Use and Privacy Policy. */
-"PrivacyAlertViewMessage" = "Door verder te gaan, gaat u akkoord met Take a Hike Gebruiksvoorwaarden en Privacy beleid.";
+/* By continuing, you agree with festiGo Terms of Use and Privacy Policy. */
+"PrivacyAlertViewMessage" = "Door verder te gaan, gaat u akkoord met festiGo Gebruiksvoorwaarden en Privacy beleid.";
 
 /* View Tems of Use */
 "PrivacyTermsButtonText" = "Gebruiksvoorwaarden";
@@ -222,7 +222,7 @@
 "Where do you want to play?" = "playwear wil je spelen?";
 
 /*WelcomeText */
-"WelcomeText" = "Welkom bij Take a Hike!\r\n Selecteer een stad waar je wilt spelen uit de lijst. Sluit steden zijn vaak automatisch bovenaan geselecteerd.\r\n U kunt de stad op elk moment wisselen!";
+"WelcomeText" = "Welkom bij festiGo!\r\n Selecteer een stad waar je wilt spelen uit de lijst. Sluit steden zijn vaak automatisch bovenaan geselecteerd.\r\n U kunt de stad op elk moment wisselen!";
 
 /* No comment provided by engineer. */
 "Yes!" = "Ja!";

@@ -106,6 +106,7 @@
 		AC81E86C18E891B00074C301 /* HockeySDK.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = AC81E86918E891B00074C301 /* HockeySDK.xcconfig */; };
 		AC81E86D18E891B00074C301 /* HockeySDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AC81E86A18E891B00074C301 /* HockeySDKResources.bundle */; };
 		AC81E86F18E891BF0074C301 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC81E86E18E891BF0074C301 /* CoreText.framework */; };
+		AC81E87218E8B0900074C301 /* festigo-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC81E87018E8B0900074C301 /* festigo-Info.plist */; };
 		AC844BFA17629EE30092D79C /* SSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = AC844BF917629EE30092D79C /* SSKeychain.m */; };
 		ACC893B6175F7A3C002AC636 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ACC893B5175F7A3C002AC636 /* libz.dylib */; };
 		ACDBD96C18E886510063AAB7 /* NSDataAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDBD96918E886510063AAB7 /* NSDataAdditions.m */; };
@@ -218,8 +219,6 @@
 		AC42EB9C18E70560005BD53B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		AC42EBA218E70560005BD53B /* FileUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileUtilities.h; sourceTree = "<group>"; };
 		AC42EBA318E70560005BD53B /* FileUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileUtilities.m; sourceTree = "<group>"; };
-		AC42EBA418E70560005BD53B /* festigo.temp_caseinsensitive_rename.temp_caseinsensitive_rename-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "festigo.temp_caseinsensitive_rename.temp_caseinsensitive_rename-Info.plist"; sourceTree = "<group>"; };
-		AC42EBA518E70560005BD53B /* festigo.temp_caseinsensitive_rename.temp_caseinsensitive_rename-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "festigo.temp_caseinsensitive_rename.temp_caseinsensitive_rename-Prefix.pch"; sourceTree = "<group>"; };
 		AC42EBA618E70560005BD53B /* GoHikeHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoHikeHTTPClient.h; sourceTree = "<group>"; };
 		AC42EBA718E70560005BD53B /* GoHikeHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoHikeHTTPClient.m; sourceTree = "<group>"; };
 		AC42EBA918E70560005BD53B /* CitiesOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CitiesOverlayView.h; sourceTree = "<group>"; };
@@ -289,6 +288,8 @@
 		AC81E86918E891B00074C301 /* HockeySDK.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = HockeySDK.xcconfig; sourceTree = "<group>"; };
 		AC81E86A18E891B00074C301 /* HockeySDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HockeySDKResources.bundle; sourceTree = "<group>"; };
 		AC81E86E18E891BF0074C301 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		AC81E87018E8B0900074C301 /* festigo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "festigo-Info.plist"; sourceTree = "<group>"; };
+		AC81E87118E8B0900074C301 /* festigo-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "festigo-Prefix.pch"; sourceTree = "<group>"; };
 		AC844BF817629EE30092D79C /* SSKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSKeychain.h; sourceTree = "<group>"; };
 		AC844BF917629EE30092D79C /* SSKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSKeychain.m; sourceTree = "<group>"; };
 		ACC893B5175F7A3C002AC636 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -562,11 +563,11 @@
 		AC42EC2B18E70599005BD53B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AC81E87018E8B0900074C301 /* festigo-Info.plist */,
+				AC81E87118E8B0900074C301 /* festigo-Prefix.pch */,
 				AC42EBDE18E70560005BD53B /* Secret.h */,
 				AC42EC2C18E70708005BD53B /* Images.xcassets */,
 				AC42EBB718E70560005BD53B /* main.m */,
-				AC42EBA418E70560005BD53B /* festigo.temp_caseinsensitive_rename.temp_caseinsensitive_rename-Info.plist */,
-				AC42EBA518E70560005BD53B /* festigo.temp_caseinsensitive_rename.temp_caseinsensitive_rename-Prefix.pch */,
 				AC42EBDB18E70560005BD53B /* routeme.plist */,
 				AC42EB9918E70560005BD53B /* InfoPlist.strings */,
 				AC42EB9B18E70560005BD53B /* Localizable.strings */,
@@ -829,6 +830,7 @@
 				AC42EBED18E70560005BD53B /* CatalogViewController.xib in Resources */,
 				AC42EBF918E70560005BD53B /* CheckinView.xib in Resources */,
 				AC42EC3418E73ADB005BD53B /* amsterdamcentrum.gpx in Resources */,
+				AC81E87218E8B0900074C301 /* festigo-Info.plist in Resources */,
 				AC42EBFD18E70560005BD53B /* CompassTopView.xib in Resources */,
 				AC42EC1F18E70560005BD53B /* NavigationStatusView.xib in Resources */,
 				AC81E86C18E891B00074C301 /* HockeySDK.xcconfig in Resources */,
@@ -1055,6 +1057,7 @@
 				PRODUCT_NAME = festigo;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1086,6 +1089,7 @@
 				PRODUCT_NAME = festigo;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
