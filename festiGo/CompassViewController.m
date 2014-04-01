@@ -341,9 +341,9 @@
     _topView = [[[NSBundle mainBundle] loadNibNamed:@"CompassTopView" owner:self options:nil] objectAtIndex:0];    
     
     [self.view addSubview:destinationRadarView];
-    [self.view addSubview:cloudView];
     [self.view addSubview:self.statusView];
     [self.view addSubview:_topView];
+    [self.view insertSubview:cloudView belowSubview:self.arrow];    
         
 }
 

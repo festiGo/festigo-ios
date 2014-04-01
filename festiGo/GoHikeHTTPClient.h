@@ -24,6 +24,7 @@ extern NSString* const kGOHIKE_BASEURL;
 - (void)getCatalogForCity:(int)cityID;
 - (void)getRoute:(NSInteger)routeId;
 - (void)downloadFileWithUrl:(NSString*)fileUrl savePath:(NSString*)savePath;
+- (void)downloadFileWithUrl:(NSString*)fileUrl savePath:(NSString*)savePath blur:(BOOL)blur;
 - (void)pushCheckins;
 - (void)connectFBId:(NSString*)facebookID name:(NSString*)name email:(NSString*)email token:(NSString*)token expDate:(NSDate*)expDate;
 

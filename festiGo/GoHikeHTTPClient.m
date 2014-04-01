@@ -10,6 +10,7 @@
 #import "AFJSONRequestOperation.h"
 #import "AFImageRequestOperation.h"
 #import "SSKeychain.h"
+#import "UIImage+ImageEffects.h"
 
 NSString* const kGOHIKE_BASEURL = @"http://api.festigo.es";
 
@@ -194,8 +195,12 @@ NSString* const kFinishedConnectingDevice = @"kFinishedConnectingDevice";
     [self enqueueHTTPRequestOperation:op];
 }
 
-
 - (void)downloadFileWithUrl:(NSString*)fileUrl savePath:(NSString*)savePath
+{
+    [self downloadFileWithUrl:fileUrl savePath:savePath blur:NO];
+}
+
+- (void)downloadFileWithUrl:(NSString*)fileUrl savePath:(NSString*)savePath blur:(BOOL)blur
 {
     if(![[NSFileManager defaultManager] fileExistsAtPath:savePath]){
         NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:fileUrl]];
@@ -203,6 +208,11 @@ NSString* const kFinishedConnectingDevice = @"kFinishedConnectingDevice";
         operation = [AFImageRequestOperation imageRequestOperationWithRequest:request imageProcessingBlock:^UIImage *(UIImage *image) {
             return image;
         } success:^(NSURLRequest *request, NSHTTPURLResponse *response, UIImage *image) {
+            if(blur){
+                //We need to blur the image
+                UIColor *tintColor = [UIColor colorWithWhite:1.0 alpha:0.3];
+                image = [image applyBlurWithRadius:1 tintColor:tintColor saturationDeltaFactor:1.8 maskImage:nil];
+            }
             NSData *data = UIImagePNGRepresentation(image);
             NSDictionary *userInfo = @{@"file" : savePath};
             [[NSNotificationCenter defaultCenter] postNotificationName:kFinishedDownloadingFile object:nil userInfo:userInfo];

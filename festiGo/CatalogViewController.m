@@ -147,8 +147,7 @@
     }
     
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        UIColor *tintColor = [UIColor colorWithWhite:1.0 alpha:0.3];
-        UIImage *cellImage = [[UIImage imageWithData:[FileUtilities iconDataForRoute:route]] applyBlurWithRadius:1 tintColor:tintColor saturationDeltaFactor:1.8 maskImage:nil];
+        UIImage *cellImage = [UIImage imageWithData:[FileUtilities iconDataForRoute:route]];
         dispatch_async(dispatch_get_main_queue(), ^{
             cell.profileImage.image = cellImage;
             cell.profileImage.layer.cornerRadius = 6;

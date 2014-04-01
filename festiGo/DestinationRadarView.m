@@ -68,7 +68,7 @@
             //draw the point as a target, checked target or a gray dot
             if([[waypoint objectForKey:@"location_id"] intValue] == [[AppState sharedInstance] activeTargetId])
             {
-                UIImage *targetImage = [UIImage imageNamed:@"target"];
+                UIImage *targetImage = [UIImage imageNamed:@"target-current"];
                 [targetImage drawAtPoint:CGPointMake(x-targetImage.size.width/2, y-targetImage.size.height/2)];
             }
             else if([[waypoint objectForKey:@"visited"] intValue] == 1)

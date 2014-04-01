@@ -156,7 +156,7 @@
         //write the icon file and image
         NSString *iconFile = [NSString stringWithFormat:@"%@.png",[[route GHicon] GHmd5]];
         NSString *iconPath = [savePath stringByAppendingPathComponent:iconFile];
-        [[GoHikeHTTPClient sharedClient] downloadFileWithUrl:[[route GHicon] GHurl] savePath:iconPath];
+        [[GoHikeHTTPClient sharedClient] downloadFileWithUrl:[[route GHicon] GHurl] savePath:iconPath blur:YES];
         
         NSString *imageFile = [NSString stringWithFormat:@"%@.png",[[route GHimage] GHmd5]];
         NSString *imagePath = [savePath stringByAppendingPathComponent:imageFile];

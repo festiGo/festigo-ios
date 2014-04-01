@@ -58,6 +58,9 @@
     
     UIBarButtonItem *doneButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(doneButtonTapped:)];
     self.navigationItem.rightBarButtonItem = doneButton;
+    
+    //festiGo Styling
+    [self.tableView setSeparatorColor:[UIColor clearColor]];
 }
 
 - (void)viewWillAppear:(BOOL)animated
