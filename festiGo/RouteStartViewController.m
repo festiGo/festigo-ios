@@ -17,6 +17,9 @@
 #import "UIImageView+AFNetworking.h"
 #import "SVProgressHUD.h"
 #import "SSKeychain.h"
+#import "GAI.h"
+#import "GAIFields.h"
+#import "GAIDictionaryBuilder.h"
 
 #import <QuartzCore/QuartzCore.h>
 
@@ -60,6 +63,12 @@
     
     //festiGo Styling
     [self.tableView setSeparatorColor:[UIColor clearColor]];
+    
+    //Google Analytics
+    id<GAITracker> tracker = [[GAI sharedInstance] defaultTracker];
+    [tracker send:[[[GAIDictionaryBuilder createAppView] set:NSStringFromClass([self class])
+                                                      forKey:kGAIScreenName] build]];
+
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -464,7 +473,11 @@
 - (void)onRouteFinished
 {
     //This is called when user exists from the route screen
-    //TODO: put analytics here
+    id<GAITracker> tracker = [[GAI sharedInstance] defaultTracker];
+    NSDictionary *params = [NSDictionary dictionaryWithObjectsAndKeys:
+                            @"onRouteFinished", kGAIHitType, NSStringFromClass([self class]), kGAIScreenName, nil];
+    [tracker send:params];
+
     showRewardOnAppear = TRUE;
 }
 

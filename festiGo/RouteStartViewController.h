@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "CompassViewController.h"
-
+#import "GAITrackedViewController.h"
 
 @interface RouteStartViewController : UITableViewController<CompassViewControllerDelegate, UIAlertViewDelegate>
 {

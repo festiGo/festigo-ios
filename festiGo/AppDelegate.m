@@ -17,6 +17,8 @@
 #import "CatalogViewController.h"
 #import "SIAlertView.h"
 #import <HockeySDK/HockeySDK.h>
+#import "GAI.h"
+#import "GAITrackedViewController.h"
 
 @implementation AppDelegate
 
@@ -99,6 +101,29 @@
     [[BITHockeyManager sharedHockeyManager] startManager];
     [[BITHockeyManager sharedHockeyManager].authenticator authenticateInstallation];
 
+    
+    //Google Analytics
+    //Google analytics
+    // Optional: automatically send uncaught exceptions to Google Analytics.
+    [GAI sharedInstance].trackUncaughtExceptions = YES;
+    
+    // Optional: set Google Analytics dispatch interval to e.g. 20 seconds.
+    [GAI sharedInstance].dispatchInterval = 20;
+    
+    // Optional: set Logger to VERBOSE for debug information.
+    [[[GAI sharedInstance] logger] setLogLevel:kGAILogLevelVerbose];
+    
+    // Initialize tracker. Replace with your tracking ID.
+    [[GAI sharedInstance] trackerWithTrackingId:kGoogleAnaliticsTrackingCode];
+    
+    //Register preferences default
+    [self registerDefaultsFromSettingsBundle];
+    
+    if([[NSUserDefaults standardUserDefaults] boolForKey:@"google-analytics"] == YES)
+    {
+        //Opt Out if user chose so
+        [[GAI sharedInstance] setOptOut:YES];
+    }
     
     //Customize appearance iOS5
     [self customizeAppearance];
@@ -247,5 +272,27 @@
 
 }
 
+#pragma mark - Register NSUserDefaults
+- (void)registerDefaultsFromSettingsBundle {
+    // this function writes default settings as settings
+    NSString *settingsBundle = [[NSBundle mainBundle] pathForResource:@"Settings" ofType:@"bundle"];
+    if(!settingsBundle) {
+        NSLog(@"Could not find Settings.bundle");
+        return;
+    }
+    
+    NSDictionary *settings = [NSDictionary dictionaryWithContentsOfFile:[settingsBundle stringByAppendingPathComponent:@"Root.plist"]];
+    NSArray *preferences = [settings objectForKey:@"PreferenceSpecifiers"];
+    
+    NSMutableDictionary *defaultsToRegister = [[NSMutableDictionary alloc] initWithCapacity:[preferences count]];
+    for(NSDictionary *prefSpecification in preferences) {
+        NSString *key = [prefSpecification objectForKey:@"Key"];
+        if(key) {
+            [defaultsToRegister setObject:[prefSpecification objectForKey:@"DefaultValue"] forKey:key];
+        }
+    }
+    
+    [[NSUserDefaults standardUserDefaults] registerDefaults:defaultsToRegister];
+}
 
 @end

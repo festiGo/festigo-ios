@@ -19,7 +19,9 @@
 #import <QuartzCore/QuartzCore.h>
 #import "UIImage+ImageEffects.h"
 #import "SystemVersion.h"
-
+#import "GAI.h"
+#import "GAIDictionaryBuilder.h"
+#import "GAIFields.h"
 
 #define kSELECTION_CELL_IDENTIFIER @"SelectionCell"
 #define kSECTION_HEADER_IDENTIFIER @"CatalogViewCollectionHeader"
@@ -82,6 +84,12 @@
     
 //Load catalog
     [self loadCatalogForCity:[[AppState sharedInstance] currentCity].GHid];
+    
+    //Google Analytics
+    id<GAITracker> tracker = [[GAI sharedInstance] defaultTracker];
+    [tracker send:[[[GAIDictionaryBuilder createAppView] set:NSStringFromClass([self class])
+                                                      forKey:kGAIScreenName] build]];
+
 }
 
 - (void)viewWillAppear:(BOOL)animated

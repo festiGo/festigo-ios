@@ -30,6 +30,10 @@
 
 #import "SIAlertView.h"
 
+#import "GAI.h"
+#import "GAIFields.h"
+#import "GAIDictionaryBuilder.h"
+
 #define ARROW_SIZE 200
 #define COMPASS_SIZE 300
 #if DEBUG
@@ -344,7 +348,12 @@
     [self.view addSubview:self.statusView];
     [self.view addSubview:_topView];
     [self.view insertSubview:cloudView belowSubview:self.arrow];    
-        
+    
+    //Google Analytics
+    id<GAITracker> tracker = [[GAI sharedInstance] defaultTracker];
+    [tracker send:[[[GAIDictionaryBuilder createAppView] set:NSStringFromClass([self class])
+                                                      forKey:kGAIScreenName] build]];
+
 }
 
 - (void)didReceiveMemoryWarning

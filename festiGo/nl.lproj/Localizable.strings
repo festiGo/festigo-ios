@@ -218,8 +218,8 @@
 /* No comment provided by engineer. */
 "View Reward" = "Onderscheiding";
 
-/* Where do you want to play? */
-"Where do you want to play?" = "playwear wil je spelen?";
+/* Where are you? */
+"Where are you?" = "Waar ben je?";
 
 /*WelcomeText */
 "WelcomeText" = "Welkom bij festiGo!\r\n Selecteer een stad waar je wilt spelen uit de lijst. Sluit steden zijn vaak automatisch bovenaan geselecteerd.\r\n U kunt de stad op elk moment wisselen!";

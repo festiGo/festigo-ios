@@ -12,7 +12,9 @@
 #import "CustomBarButtonViewRight.h"
 #import "SIAlertView.h"
 #import <FacebookSDK/FacebookSDK.h>
-
+#import "GAI.h"
+#import "GAIDictionaryBuilder.h"
+#import "GAIFields.h"
 
 @interface RewardViewController () <FBLoginViewDelegate>
 
@@ -61,6 +63,10 @@
     _rewardDescription.text = [_reward GHdescription];
     _rewardImage.image = [UIImage imageWithData:[FileUtilities imageDataForReward:_reward]];
     
+    //Google Analytics
+    id<GAITracker> tracker = [[GAI sharedInstance] defaultTracker];
+    [tracker send:[[[GAIDictionaryBuilder createAppView] set:NSStringFromClass([self class])
+                                                      forKey:kGAIScreenName] build]];
 }
 
 - (void)didReceiveMemoryWarning

@@ -108,6 +108,10 @@
 		AC81E86F18E891BF0074C301 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC81E86E18E891BF0074C301 /* CoreText.framework */; };
 		AC81E87218E8B0900074C301 /* festigo-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC81E87018E8B0900074C301 /* festigo-Info.plist */; };
 		AC844BFA17629EE30092D79C /* SSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = AC844BF917629EE30092D79C /* SSKeychain.m */; };
+		ACB0B7D118EC2CFF008F8AD1 /* libAdIdAccess.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ACB0B7CA18EC2CFF008F8AD1 /* libAdIdAccess.a */; };
+		ACB0B7D218EC2CFF008F8AD1 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ACB0B7CB18EC2CFF008F8AD1 /* libGoogleAnalyticsServices.a */; };
+		ACB0B7D518EC2E15008F8AD1 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = ACB0B7D418EC2E15008F8AD1 /* Settings.bundle */; };
+		ACB0B7D718EC2EAC008F8AD1 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACB0B7D618EC2EAC008F8AD1 /* CoreData.framework */; };
 		ACC893B6175F7A3C002AC636 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ACC893B5175F7A3C002AC636 /* libz.dylib */; };
 		ACDBD96C18E886510063AAB7 /* NSDataAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDBD96918E886510063AAB7 /* NSDataAdditions.m */; };
 		ACDBD96D18E886510063AAB7 /* NSLayoutConstraint+EvenDistribution.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDBD96B18E886510063AAB7 /* NSLayoutConstraint+EvenDistribution.m */; };
@@ -292,6 +296,21 @@
 		AC81E87118E8B0900074C301 /* festigo-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "festigo-Prefix.pch"; sourceTree = "<group>"; };
 		AC844BF817629EE30092D79C /* SSKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSKeychain.h; sourceTree = "<group>"; };
 		AC844BF917629EE30092D79C /* SSKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSKeychain.m; sourceTree = "<group>"; };
+		ACB0B7C418EC2CFF008F8AD1 /* GAI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GAI.h; path = GoogleAnalyticsServicesiOS_3.06/GAI.h; sourceTree = "<group>"; };
+		ACB0B7C518EC2CFF008F8AD1 /* GAIDictionaryBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GAIDictionaryBuilder.h; path = GoogleAnalyticsServicesiOS_3.06/GAIDictionaryBuilder.h; sourceTree = "<group>"; };
+		ACB0B7C618EC2CFF008F8AD1 /* GAIFields.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GAIFields.h; path = GoogleAnalyticsServicesiOS_3.06/GAIFields.h; sourceTree = "<group>"; };
+		ACB0B7C718EC2CFF008F8AD1 /* GAILogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GAILogger.h; path = GoogleAnalyticsServicesiOS_3.06/GAILogger.h; sourceTree = "<group>"; };
+		ACB0B7C818EC2CFF008F8AD1 /* GAITrackedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GAITrackedViewController.h; path = GoogleAnalyticsServicesiOS_3.06/GAITrackedViewController.h; sourceTree = "<group>"; };
+		ACB0B7C918EC2CFF008F8AD1 /* GAITracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GAITracker.h; path = GoogleAnalyticsServicesiOS_3.06/GAITracker.h; sourceTree = "<group>"; };
+		ACB0B7CA18EC2CFF008F8AD1 /* libAdIdAccess.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAdIdAccess.a; path = GoogleAnalyticsServicesiOS_3.06/libAdIdAccess.a; sourceTree = "<group>"; };
+		ACB0B7CB18EC2CFF008F8AD1 /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGoogleAnalyticsServices.a; path = GoogleAnalyticsServicesiOS_3.06/libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
+		ACB0B7CC18EC2CFF008F8AD1 /* TAGContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TAGContainer.h; path = GoogleAnalyticsServicesiOS_3.06/TAGContainer.h; sourceTree = "<group>"; };
+		ACB0B7CD18EC2CFF008F8AD1 /* TAGContainerOpener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TAGContainerOpener.h; path = GoogleAnalyticsServicesiOS_3.06/TAGContainerOpener.h; sourceTree = "<group>"; };
+		ACB0B7CE18EC2CFF008F8AD1 /* TAGDataLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TAGDataLayer.h; path = GoogleAnalyticsServicesiOS_3.06/TAGDataLayer.h; sourceTree = "<group>"; };
+		ACB0B7CF18EC2CFF008F8AD1 /* TAGLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TAGLogger.h; path = GoogleAnalyticsServicesiOS_3.06/TAGLogger.h; sourceTree = "<group>"; };
+		ACB0B7D018EC2CFF008F8AD1 /* TAGManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TAGManager.h; path = GoogleAnalyticsServicesiOS_3.06/TAGManager.h; sourceTree = "<group>"; };
+		ACB0B7D418EC2E15008F8AD1 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		ACB0B7D618EC2EAC008F8AD1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		ACC893B5175F7A3C002AC636 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		ACDBD96818E886510063AAB7 /* NSDataAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDataAdditions.h; sourceTree = "<group>"; };
 		ACDBD96918E886510063AAB7 /* NSDataAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDataAdditions.m; sourceTree = "<group>"; };
@@ -317,15 +336,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACE2AD4017628D94004C6AF8 /* AdSupport.framework in Frameworks */,
+				ACB0B7D718EC2EAC008F8AD1 /* CoreData.framework in Frameworks */,
 				AC0AF4B0175633B700B766E0 /* Security.framework in Frameworks */,
 				ACDD9B701743B20200D64682 /* CoreGraphics.framework in Frameworks */,
 				AC81E86F18E891BF0074C301 /* CoreText.framework in Frameworks */,
 				ACDBD97B18E889650063AAB7 /* libsqlite3.dylib in Frameworks */,
 				ACDBD97A18E8892A0063AAB7 /* Accelerate.framework in Frameworks */,
 				AC06F91317CFE3B7002E6B67 /* Accounts.framework in Frameworks */,
-				ACE2AD4017628D94004C6AF8 /* AdSupport.framework in Frameworks */,
 				AC41F7FD1761EAC100ED3F14 /* AudioToolbox.framework in Frameworks */,
 				ACC893B6175F7A3C002AC636 /* libz.dylib in Frameworks */,
+				ACB0B7D118EC2CFF008F8AD1 /* libAdIdAccess.a in Frameworks */,
 				AC0AF4891754BA6A00B766E0 /* MobileCoreServices.framework in Frameworks */,
 				AC0AF4871754BA6300B766E0 /* SystemConfiguration.framework in Frameworks */,
 				1CB18469174BC0A500D71DA4 /* CoreLocation.framework in Frameworks */,
@@ -333,6 +354,7 @@
 				ACDD9B6C1743B20200D64682 /* UIKit.framework in Frameworks */,
 				ACDD9B6E1743B20200D64682 /* Foundation.framework in Frameworks */,
 				AC81E86B18E891B00074C301 /* HockeySDK.framework in Frameworks */,
+				ACB0B7D218EC2CFF008F8AD1 /* libGoogleAnalyticsServices.a in Frameworks */,
 				A726AA73175DEA9F00C7F8E6 /* Social.framework in Frameworks */,
 				A71CF122175E3BEB00FA2168 /* MapKit.framework in Frameworks */,
 				AC06F90F17CFE375002E6B67 /* FacebookSDK.framework in Frameworks */,
@@ -407,6 +429,7 @@
 		AC303F8017C4F53100875910 /* ThirdParties */ = {
 			isa = PBXGroup;
 			children = (
+				ACB0B7D318EC2D05008F8AD1 /* Google analytics */,
 				AC303F8117C4F54400875910 /* SVProgressHUD */,
 				AC30AEEE1768BE01008449BD /* SIAlertView */,
 				AC844BF717629EE30092D79C /* SSKeychain */,
@@ -572,6 +595,7 @@
 				AC42EB9918E70560005BD53B /* InfoPlist.strings */,
 				AC42EB9B18E70560005BD53B /* Localizable.strings */,
 				ACDBD97618E887F40063AAB7 /* SystemVersion.h */,
+				ACB0B7D418EC2E15008F8AD1 /* Settings.bundle */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -611,6 +635,26 @@
 				AC844BF917629EE30092D79C /* SSKeychain.m */,
 			);
 			path = SSKeychain;
+			sourceTree = "<group>";
+		};
+		ACB0B7D318EC2D05008F8AD1 /* Google analytics */ = {
+			isa = PBXGroup;
+			children = (
+				ACB0B7C418EC2CFF008F8AD1 /* GAI.h */,
+				ACB0B7C518EC2CFF008F8AD1 /* GAIDictionaryBuilder.h */,
+				ACB0B7C618EC2CFF008F8AD1 /* GAIFields.h */,
+				ACB0B7C718EC2CFF008F8AD1 /* GAILogger.h */,
+				ACB0B7C818EC2CFF008F8AD1 /* GAITrackedViewController.h */,
+				ACB0B7C918EC2CFF008F8AD1 /* GAITracker.h */,
+				ACB0B7CA18EC2CFF008F8AD1 /* libAdIdAccess.a */,
+				ACB0B7CB18EC2CFF008F8AD1 /* libGoogleAnalyticsServices.a */,
+				ACB0B7CC18EC2CFF008F8AD1 /* TAGContainer.h */,
+				ACB0B7CD18EC2CFF008F8AD1 /* TAGContainerOpener.h */,
+				ACB0B7CE18EC2CFF008F8AD1 /* TAGDataLayer.h */,
+				ACB0B7CF18EC2CFF008F8AD1 /* TAGLogger.h */,
+				ACB0B7D018EC2CFF008F8AD1 /* TAGManager.h */,
+			);
+			name = "Google analytics";
 			sourceTree = "<group>";
 		};
 		ACDBD96318E885C90063AAB7 /* Compass and Navigation Views */ = {
@@ -718,6 +762,7 @@
 		ACDD9B6A1743B20200D64682 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				ACB0B7D618EC2EAC008F8AD1 /* CoreData.framework */,
 				AC81E86E18E891BF0074C301 /* CoreText.framework */,
 				AC81E86618E891B00074C301 /* HockeySDK.embeddedframework */,
 				ACDBD97918E889290063AAB7 /* Accelerate.framework */,
@@ -837,6 +882,7 @@
 				AC41F8011761FE8400ED3F14 /* fanfare.mp3 in Resources */,
 				AC41F8021761FE8400ED3F14 /* success.mp3 in Resources */,
 				AC30AEF21768BE01008449BD /* SIAlertView.bundle in Resources */,
+				ACB0B7D518EC2E15008F8AD1 /* Settings.bundle in Resources */,
 				AC303F8517C4F54400875910 /* SVProgressHUD.bundle in Resources */,
 				AC42EC2918E70560005BD53B /* TableBackground.xib in Resources */,
 				AC42EC2418E70560005BD53B /* routeme.plist in Resources */,
@@ -1049,7 +1095,10 @@
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "festiGo/festigo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GoogleAnalyticsServicesiOS_3.06",
+				);
 				OTHER_LDFLAGS = (
 					"-objC",
 					"-all_load",
@@ -1081,7 +1130,10 @@
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "festiGo/festigo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GoogleAnalyticsServicesiOS_3.06",
+				);
 				OTHER_LDFLAGS = (
 					"-objC",
 					"-all_load",

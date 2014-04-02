@@ -10,6 +10,9 @@
 #import "CustomBarButtonViewLeft.h"
 #import "CLLocation+measuring.h"
 #import "MapPoint.h"
+#import "GAI.h"
+#import "GAIFields.h"
+#import "GAIDictionaryBuilder.h"
 
 @interface MapViewController ()
 
@@ -34,7 +37,13 @@
     map = [[MKMapView alloc] initWithFrame:self.view.bounds];
     map.showsUserLocation = YES;
     map.delegate = self;
-    [self.view addSubview:map];    
+    [self.view addSubview:map];
+    
+    //Google Analytics
+    id<GAITracker> tracker = [[GAI sharedInstance] defaultTracker];
+    [tracker send:[[[GAIDictionaryBuilder createAppView] set:NSStringFromClass([self class])
+                                                      forKey:kGAIScreenName] build]];
+
 }
 
 - (void)viewDidAppear:(BOOL)animated

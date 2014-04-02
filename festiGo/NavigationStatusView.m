@@ -21,9 +21,9 @@
 //update the collection of completed checkins
 -(void)setCheckinsCompleteWithArray:(NSArray*)array nextLocationId:(int)location_id
 {
-    UIImage * targetImage = [UIImage imageNamed:@"target"];
+    UIImage * targetImage = [UIImage imageNamed:@"target-red"];
     UIImage * targetCompleteImage = [UIImage imageNamed:@"target-checked"];
-    UIImage * targetCurrentImage = [UIImage imageNamed:@"target-red"];
+    UIImage * targetCurrentImage = [UIImage imageNamed:@"target"];
     
     
     //clear all
@@ -43,19 +43,15 @@
         if([[[array objectAtIndex:i] objectForKey:@"visited"] boolValue] == YES)
         {
             //draw a completed icon
-//            image = [[UIImageView alloc] initWithImage:targetCompleteImage];
             [image setImage:targetCompleteImage];
         }
         else
         {
             if([[array objectAtIndex:i] GHlocation_id] == location_id)
             {
-//                image = [[UIImageView alloc] initWithImage:targetCurrentImage];
                 [image setImage:targetCurrentImage];
             }
             else{
-            //draw an open icon
-//            image = [[UIImageView alloc] initWithImage:targetImage];
                 [image setImage:targetImage];
             }
         }

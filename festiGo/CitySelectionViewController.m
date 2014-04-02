@@ -45,7 +45,7 @@
     //Fix UI for iOS7
     [self fixUIForiOS7];
 
-    self.title = NSLocalizedString(@"Where do you want to play?", @"Where do you want to play?");
+    self.title = NSLocalizedString(@"Where are you?", @"Where are you?");
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
