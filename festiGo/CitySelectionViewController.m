@@ -16,6 +16,9 @@
 #define base_url @"http://api.festigo.es/"
 
 @interface CitySelectionViewController ()
+{
+    BOOL previouslySelectedCity; //If no city was previously selected, it's the first start
+}
 
 @end
 
@@ -77,6 +80,8 @@
     [refreshControl addTarget:self action:@selector(loadCities) forControlEvents:UIControlEventValueChanged];
     refreshControl.tintColor = [UIColor grayColor];
     self.refreshControl = refreshControl;
+    
+    previouslySelectedCity = [[AppState sharedInstance] currentCity] == nil ? NO : YES;
     
     //festiGo Styling
     [self.tableView setSeparatorColor:[UIColor clearColor]];
@@ -218,12 +223,11 @@
     GHCity *city;
     GHCities *cities = [[AppState sharedInstance] cities];
 
-    
     switch (indexPath.section) {
         case 0:
         {
             //within
-            city = [[cities GHwithin] objectAtIndex:indexPath.row];
+    
         }
             break;
         case 1:
@@ -238,8 +242,7 @@
 
     [[AppState sharedInstance] setCurrentCity:city];
     [[AppState sharedInstance] save];
-    [self pushNewController];
-    
+    [self pushNewControllerAnimated:YES];
 }
 
 #pragma mark - Actions
@@ -286,10 +289,10 @@
     }
 }
 
-- (void)pushNewController
+- (void)pushNewControllerAnimated:(BOOL)animated
 {
     CatalogViewController *cvc = [[CatalogViewController alloc] initWithNibName:@"CatalogViewController" bundle:nil];
-    [self.navigationController pushViewController:cvc animated:YES];
+    [self.navigationController pushViewController:cvc animated:animated];
 }
 
 - (void)handleLoadCitiesCompleted:(NSNotification*)notification
@@ -301,6 +304,16 @@
     else{
         [SVProgressHUD showSuccessWithStatus:nil];
         [self.tableView reloadData];
+        
+        if (previouslySelectedCity == NO) { //means it's first time user starts app
+            GHCity *city = [[[[AppState sharedInstance] cities] GHwithin] lastObject];
+            if (city != nil) {
+                [[AppState sharedInstance] setCurrentCity:city];
+                [[AppState sharedInstance] save];
+                [self pushNewControllerAnimated:NO];
+                return;
+            }
+        }
         
         //How to play screen
         if ([[NSUserDefaults standardUserDefaults] objectForKey:@"howtoplay_cities_displayed"] == nil) {
