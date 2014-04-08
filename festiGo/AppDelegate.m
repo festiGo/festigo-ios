@@ -119,7 +119,7 @@
     //Register preferences default
     [self registerDefaultsFromSettingsBundle];
     
-    if([[NSUserDefaults standardUserDefaults] boolForKey:@"google-analytics"] == YES)
+    if([[NSUserDefaults standardUserDefaults] boolForKey:@"google-analytics"] == NO)
     {
         //Opt Out if user chose so
         [[GAI sharedInstance] setOptOut:YES];
