@@ -465,6 +465,15 @@
 
 - (void)onViewRewardButton
 {
+    //Analytics Code
+    id<GAITracker> tracker = [[GAI sharedInstance] defaultTracker];
+    
+    NSDictionary *params = [[GAIDictionaryBuilder createEventWithCategory:@"UX"
+                                                                   action:@"touch"
+                                                                    label:@"View Reward Button"
+                                                                    value:nil] build];
+    [tracker send:params];
+    //Analytics Code //
     [self viewReward];
 }
 
@@ -472,12 +481,6 @@
 
 - (void)onRouteFinished
 {
-    //This is called when user exists from the route screen
-    id<GAITracker> tracker = [[GAI sharedInstance] defaultTracker];
-    NSDictionary *params = [NSDictionary dictionaryWithObjectsAndKeys:
-                            @"onRouteFinished", kGAIHitType, NSStringFromClass([self class]), kGAIScreenName, nil];
-    [tracker send:params];
-
     showRewardOnAppear = TRUE;
 }
 

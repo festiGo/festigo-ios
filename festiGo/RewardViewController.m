@@ -77,6 +77,15 @@
 
 - (void)onShareButton
 {
+    //Analytics Code
+    id<GAITracker> tracker = [[GAI sharedInstance] defaultTracker];
+    
+    NSDictionary *params = [[GAIDictionaryBuilder createEventWithCategory:@"UX"
+                                                                   action:@"touch"
+                                                                    label:@"Share Reward Button"
+                                                                    value:nil] build];
+    [tracker send:params];
+    //Analytics Code //
     
     BOOL isFacebookLoggedIn = (FBSession.activeSession.state == FBSessionStateCreatedTokenLoaded || FBSession.activeSession.state == FBSessionStateOpen);
     if(isFacebookLoggedIn){
