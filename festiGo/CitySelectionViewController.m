@@ -16,9 +16,6 @@
 #define base_url @"http://api.festigo.es/"
 
 @interface CitySelectionViewController ()
-{
-    BOOL previouslySelectedCity; //If no city was previously selected, it's the first start
-}
 
 @end
 
@@ -80,8 +77,6 @@
     [refreshControl addTarget:self action:@selector(loadCities) forControlEvents:UIControlEventValueChanged];
     refreshControl.tintColor = [UIColor grayColor];
     self.refreshControl = refreshControl;
-    
-    previouslySelectedCity = [[AppState sharedInstance] currentCity] == nil ? NO : YES;
     
     //festiGo Styling
     [self.tableView setSeparatorColor:[UIColor clearColor]];
@@ -227,6 +222,7 @@
         case 0:
         {
             //within
+            city = [[cities GHwithin] objectAtIndex:indexPath.row];
     
         }
             break;
@@ -305,7 +301,7 @@
         [SVProgressHUD showSuccessWithStatus:nil];
         [self.tableView reloadData];
         
-        if (previouslySelectedCity == NO) { //means it's first time user starts app
+        if ([[AppState sharedInstance] currentCity] == nil) { //means it's first time user starts app
             GHCity *city = [[[[AppState sharedInstance] cities] GHwithin] lastObject];
             if (city != nil) {
                 [[AppState sharedInstance] setCurrentCity:city];
@@ -318,7 +314,7 @@
         //How to play screen
         if ([[NSUserDefaults standardUserDefaults] objectForKey:@"howtoplay_cities_displayed"] == nil) {
             
-            [self onHelpButton];
+            [self displayWelcomeScreen];
             [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithBool:YES] forKey:@"howtoplay_cities_displayed"];
         }
 
@@ -326,7 +322,7 @@
     }
 }
 
-- (void)onHelpButton
+- (void)displayWelcomeScreen
 {
     CitiesOverlayView *citiesOverlayView = [[[NSBundle mainBundle] loadNibNamed:@"CitiesOverlayView" owner:self options:nil] objectAtIndex:0];
     citiesOverlayView.textView.text = NSLocalizedString(@"WelcomeText", @"Welcome text to the app");

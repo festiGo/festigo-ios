@@ -119,8 +119,7 @@
     //Register preferences default
     [self registerDefaultsFromSettingsBundle];
     
-    if([[NSUserDefaults standardUserDefaults] boolForKey:@"google-analytics"] == NO)
-    {
+    if([[NSUserDefaults standardUserDefaults] boolForKey:@"google-analytics"] == NO){
         //Opt Out if user chose so
         [[GAI sharedInstance] setOptOut:YES];
     }
@@ -135,8 +134,6 @@
     {
         [self performCleanupOldVersion];
     }
-
-
     
     //Start updating location
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleLocationForbidden:) name:kLocationServicesForbidden object:nil];
