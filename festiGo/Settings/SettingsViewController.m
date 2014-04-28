@@ -103,17 +103,52 @@
     }
 }
 
-- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+- (UIView*)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
+    UILabel *label = [[UILabel alloc] initWithFrame:[super tableView:tableView viewForHeaderInSection:section].frame];
+    label.textColor = [UIColor whiteColor];
+    label.text = [headers objectAtIndex:section];
+    return label;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return 44;
+}
+
+//- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+//{
+//    return [headers objectAtIndex:section];
+//}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
+{
+    CGSize maxSize = CGSizeMake(320, MAXFLOAT);
+    CGSize expectedLabelSize = [[footers objectAtIndex:section] sizeWithFont:[UIFont systemFontOfSize:12.0]
+                                                           constrainedToSize:maxSize
+                                                               lineBreakMode:NSLineBreakByWordWrapping];
+    return expectedLabelSize.height;
+}
+
+- (UIView*)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
+{
+    CGSize maxSize = CGSizeMake(320, MAXFLOAT);
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 0, 0)];
+    label.lineBreakMode = NSLineBreakByWordWrapping;
+    label.numberOfLines = 0;
+    label.textColor = [UIColor whiteColor];
+    label.font = [UIFont systemFontOfSize:12.0];
+    label.text = [footers objectAtIndex:section];
+    CGRect labelRect = [label.text boundingRectWithSize:maxSize options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:label.font} context:nil];
+    [label setFrame:labelRect];
     
-    return [headers objectAtIndex:section];
-
+    return label;
 }
 
-- (NSString*)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section
-{
-    return [footers objectAtIndex:section];
-}
+//- (NSString*)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section
+//{
+//    return [footers objectAtIndex:section];
+//}
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
