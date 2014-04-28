@@ -83,7 +83,7 @@
     [self updateNavigationButtons];
     
 //Load catalog
-    [self loadCatalogForCity:[[AppState sharedInstance] currentCity].GHid];
+    [self loadCatalogForCity:[[AppState sharedInstance] currentCity].GHid requestedByUser:NO];
     
     //Google Analytics
     id<GAITracker> tracker = [[GAI sharedInstance] defaultTracker];
@@ -235,14 +235,14 @@
 - (void)startRefresh:(id)sender
 {
     [((UIRefreshControl*)sender) endRefreshing];
-    [self loadCatalogForCity:[[AppState sharedInstance] currentCity].GHid];
+    [self loadCatalogForCity:[[AppState sharedInstance] currentCity].GHid requestedByUser:YES];
 }
 
-- (void)loadCatalogForCity:(int)city
+- (void)loadCatalogForCity:(int)city requestedByUser:(BOOL)requested
 {
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleLoadCatalogCompleted:) name:kFinishedLoadingCatalog object:nil];
     [SVProgressHUD showWithStatus:NSLocalizedString(@"Updating routes to play", @"Updating routes to play") maskType:SVProgressHUDMaskTypeBlack];
-    [[GoHikeHTTPClient sharedClient] getCatalogForCity:city];
+    [[GoHikeHTTPClient sharedClient] getCatalogForCity:city requestedByUser:requested];
 }
 
 #pragma mark - Notification handlers

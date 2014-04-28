@@ -93,13 +93,13 @@ NSString* const kFinishedConnectingDevice = @"kFinishedConnectingDevice";
 }
 
 
-- (void)getCatalogForCity:(int)cityID
+- (void)getCatalogForCity:(int)cityID requestedByUser:(BOOL)requested
 {
     
     GHCatalog* existingCatalog = [FileUtilities loadCatalogFromFileWithId:cityID];
     if(existingCatalog){
         NSDate *lastModifiedDate = [FileUtilities lastModifiedDateForCatalogWithId:cityID];
-        if( abs([lastModifiedDate timeIntervalSinceNow]) > 60*60*24)
+        if( abs([lastModifiedDate timeIntervalSinceNow]) > 60*60*24 || requested == YES)
         {
             //need to redownload catalog
             //continue execution
