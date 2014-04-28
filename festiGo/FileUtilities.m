@@ -166,9 +166,13 @@
         for (GHWaypoint *waypoint in [route GHwaypoints]) {
             [FileUtilities saveWaypoint:waypoint];
         }
-        
-        [FileUtilities saveReward:[route GHreward]];
-        
+        @try {
+            [FileUtilities saveReward:[route GHreward]];
+        }
+        @catch (NSException *exception) {
+            
+        }
+    
 //    });
     
     return success;
@@ -177,11 +181,16 @@
 + (NSArray *)picturesInRoute:(GHRoute *)route
 {
     NSMutableArray *pictures = [[NSMutableArray alloc] init];
-    [pictures addObject:[[route GHimage] GHmd5]];
-    [pictures addObject:[[route GHicon] GHmd5]];
-    [pictures addObjectsFromArray:[NSArray arrayWithObjects:[[[route GHreward] GHimage] GHmd5], nil]];
-    for (GHWaypoint *waypoint in [route GHwaypoints]) {
-        [pictures addObjectsFromArray:[FileUtilities pictureInWaypoint:waypoint]];
+    @try {
+        [pictures addObject:[[route GHimage] GHmd5]];
+        [pictures addObject:[[route GHicon] GHmd5]];
+        [pictures addObjectsFromArray:[NSArray arrayWithObjects:[[[route GHreward] GHimage] GHmd5], nil]];
+        for (GHWaypoint *waypoint in [route GHwaypoints]) {
+            [pictures addObjectsFromArray:[FileUtilities pictureInWaypoint:waypoint]];
+        }
+    }
+    @catch (NSException *exception) {
+        
     }
     return [NSArray arrayWithArray:pictures];
 }
@@ -255,11 +264,14 @@
     BOOL success = [manager createDirectoryAtPath:savePath withIntermediateDirectories:YES attributes:Nil error:&error];
     if(!success)
         NSLog(@"Writing Reward to file Failed");
-    
-    NSString *imageFile = [NSString stringWithFormat:@"%@.png",[[reward GHimage] GHmd5]];
-    NSString *imagePath = [savePath stringByAppendingPathComponent:imageFile];
-    [[GoHikeHTTPClient sharedClient] downloadFileWithUrl:[[reward GHimage] GHurl] savePath:imagePath];
-    
+    @try {
+        NSString *imageFile = [NSString stringWithFormat:@"%@.png",[[reward GHimage] GHmd5]];
+        NSString *imagePath = [savePath stringByAppendingPathComponent:imageFile];
+        [[GoHikeHTTPClient sharedClient] downloadFileWithUrl:[[reward GHimage] GHurl] savePath:imagePath];
+    }
+    @catch (NSException *exception) {
+        success = NO;
+    }    
     return success;
 }
 
