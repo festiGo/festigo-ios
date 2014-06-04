@@ -29,6 +29,14 @@ static NSString *BodyCellIdentifier = @"BodyCell";
 
 @end
 
+enum TableViewRows{
+    kRowTitle = 0,
+    kRowAddress,
+    kRowWaitingTime,
+    kRowRating,
+    kRowDescription
+};
+
 @implementation LocationDetailTableViewController
 
 static CGFloat WindowHeight = 200.0;
@@ -130,6 +138,7 @@ static CGFloat ImageHeight  = 300.0;
     [_tableView registerNib:[UINib nibWithNibName:@"LocationDetailPictureCell" bundle:nil] forCellReuseIdentifier:PictureCellIdentifier];
     [_tableView registerNib:[UINib nibWithNibName:@"LocationDetailTitleCell" bundle:nil] forCellReuseIdentifier:TitleCellIdentifier];
     [_tableView registerNib:[UINib nibWithNibName:@"LocationDetailBodyCell" bundle:nil] forCellReuseIdentifier:BodyCellIdentifier];
+    [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
     
 }
 
@@ -193,7 +202,7 @@ static CGFloat ImageHeight  = 300.0;
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     if (section == 0) { return 1;  }
-    else              { return 2; }
+    else              { return 3; }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -223,7 +232,7 @@ static CGFloat ImageHeight  = 300.0;
 //                
 //            }
 //                break;
-            case 0:
+            case kRowTitle:
             {
                 LocationDetailTitleCell *cell = (LocationDetailTitleCell*)[tableView dequeueReusableCellWithIdentifier:TitleCellIdentifier forIndexPath:indexPath];
                 cell.contentView.backgroundColor = [UIColor whiteColor];
@@ -233,7 +242,28 @@ static CGFloat ImageHeight  = 300.0;
                 return cell;
             }
                 break;
-            case 1:
+            case kRowAddress:
+            {
+                UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
+                cell.imageView.image = [UIImage imageNamed:@"icon-address"];
+                cell.textLabel.text = [_location GHaddress];
+            }
+                break;
+            case kRowWaitingTime:
+            {
+                UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
+                cell.imageView.image = [UIImage imageNamed:@"icon-line"];
+                cell.textLabel.text = NSLocalizedString(@"Not enough data. Are you here? Tell us!", @"Not enough data on waiting line cell");
+            }
+                break;
+            case kRowRating:
+            {
+                UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
+                cell.imageView.image = [UIImage imageNamed:@"icon-rating"];
+                cell.textLabel.text = NSLocalizedString(@"Not enough data. Are you here? Review it!", @"Not enough data on rating cell");
+            }
+                break;
+            case kRowDescription:
             {
                 LocationDetailBodyCell *cell = [tableView dequeueReusableCellWithIdentifier:BodyCellIdentifier forIndexPath:indexPath];
                 if(cell==nil)
@@ -275,13 +305,20 @@ static CGFloat ImageHeight  = 300.0;
 //            return 0;
 //        }
 //            break;
-        case 0:
-        {
+        case kRowTitle:{
             return 60;
         }
             break;
-        case 1:
-        {
+        case kRowAddress:
+            return UITableViewAutomaticDimension;
+            break;
+        case kRowWaitingTime:
+            return UITableViewAutomaticDimension;
+            break;
+        case kRowRating:
+            return UITableViewAutomaticDimension;
+            break;
+        case kRowDescription:{
             NSString *label =  [_location GHdescription];
             CGSize stringSize = [label sizeWithFont:[UIFont fontWithName:@"HelveticaNeue" size:18.0]
                                   constrainedToSize:CGSizeMake(280, 9999) lineBreakMode:NSLineBreakByWordWrapping];

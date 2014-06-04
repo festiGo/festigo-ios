@@ -123,7 +123,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
 {
-    CGSize maxSize = CGSizeMake(320, MAXFLOAT);
+    CGSize maxSize = CGSizeMake(self.tableView.frame.size.width, MAXFLOAT);
     CGSize expectedLabelSize = [[footers objectAtIndex:section] sizeWithFont:[UIFont systemFontOfSize:12.0]
                                                            constrainedToSize:maxSize
                                                                lineBreakMode:NSLineBreakByWordWrapping];
@@ -132,7 +132,7 @@
 
 - (UIView*)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
 {
-    CGSize maxSize = CGSizeMake(320, MAXFLOAT);
+    CGSize maxSize = CGSizeMake(self.tableView.frame.size.width, MAXFLOAT);
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 0, 0)];
     label.lineBreakMode = NSLineBreakByWordWrapping;
     label.numberOfLines = 0;

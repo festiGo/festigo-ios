@@ -55,5 +55,9 @@
     return [[self objectForKey:@"rank"] integerValue];
 }
 
+- (NSString*)GHaddress
+{
+    return [self objectForKey:@"address"];
+}
 
 @end

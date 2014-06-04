@@ -20,7 +20,16 @@
 			<key>Title</key>
 			<string>ACKNOWLEDGEMENTS</string>
 			<key>FooterText</key>
-			<string>This app uses several open source 3rd-party components.
+			<string>
+                Creative Commons licensed media used in this app:
+                
+                Location by Ricardo Moreira from The Noun Project
+                Line by irene hoffman from The Noun Project
+                Rating by Dirk Schmücker from The Noun Project
+                
+                --------------------------------
+                
+                This app uses several open source 3rd-party components.
                 You need to keep this file in your resource bundle to satisfy the licenses.
                 Adding this text file to your about screen under &quot;Attribution&quot; would be a nice gesture, but is not required.
                 
@@ -30,9 +39,10 @@
                 AlertView code by Sumi Interactive, MIT Licensed.
                 HUD code by by Sam Vermette, 2-Clause BSD licensed.
                 
+                
                 MIT and BSD are very liberal licenses that allow commercial use. For more information please visit www.opensource.org.
                 
-                ----------------------------------------------------------------------------
+                --------------------------------
                 MIT License:
                 
                 Permission is hereby granted, free of charge, to any person obtaining
